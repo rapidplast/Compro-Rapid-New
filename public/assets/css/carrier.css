@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-image: url('/assets/images/bg.jpeg'); 
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #000000; /* Warna merah sesuai contoh */
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 45%; /* Atur lebar gambar lebih besar */
+    height: 300px; /* Atur tinggi gambar */
+    object-fit: cover; /* Gambar akan di-crop dengan proporsi */
+    border-radius: 8px;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    color: #d2232a;
+}
+
+.card-content p {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2232a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #a91b1e;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100%; /* Gambar akan lebar penuh di layar kecil */
+    }
+
+    .card-content {
+        text-align: center;
+    }
+
+    .card-content h2 {
+        font-size: 1.2rem;
+    }
+}

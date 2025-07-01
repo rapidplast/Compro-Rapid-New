@@ -1,0 +1,287 @@
+.one-stop {
+    text-align: start;
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-bottom: 70px;
+    color: white;
+    padding-top: 150px;
+    height: 600px;
+}
+
+.nav2{
+    position: fixed;
+    display: flex;
+    top: 0;
+    /* z-index: 1000; */
+    width: 100%;
+    align-items: center;
+    height: 170px;
+    padding-left: 650px;
+}
+
+a{
+    padding-bottom: 50px;
+}
+
+.a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.text-img {
+    font-size: 18px;
+    padding-top: 90px;
+    color: black;
+}
+
+.text-img p{
+    font-size: 18px;
+    padding-top: 30px;
+    color: black;
+}
+
+.knowledge{
+    text-align: center;
+    padding: 50px;
+}
+
+.img-des{
+    padding: 70px;
+}
+
+.cp, .pd{
+    border-radius: 10px;
+    position: relative; 
+    z-index: 1; 
+    box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.des-1, .des-2, .des-3{
+    text-align: start;
+}
+
+.ip{
+    border-radius: 10px;
+    position: relative; 
+    z-index: 1; 
+    box-shadow: 20px -20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ptext-product{
+    color: black;
+    
+}
+@media (min-width: 768px) {
+    .card-body {
+        padding: 5px;
+    }
+    .card{
+        padding: 5px;
+    }
+    .card-text {
+        font-size: 40px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .highlight {
+        font-size: 10px;
+    }
+    .product{
+        background-image: url('/assets/images/home/product.jpeg');
+    }
+    .ptext-product{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 26px;
+        
+    }
+  }
+
+.card-1, .card-3 {
+    margin-top: -150px;
+}
+
+.card-2 {
+    margin-top: 0;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.product {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 5%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.card-product{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: -60px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.card-body-product{
+    padding-top: 0px;
+}
+
+.card-text-product{
+    padding-top: 80px;
+}
+
+.box{
+    background-color: grey;
+    width: 33%;
+    height: 40px;
+    padding-right: 10px;
+    margin-top: -10px;
+}
+
+.safety{
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+.bottles{
+    text-align: center;
+}
+
+.bottles-img{
+    background-image: url('/assets/images/bottle.png');
+    padding-top: 40px;
+    height: 600px;
+    margin-top: 20px;
+    color: white;
+    padding-left: 290px;
+    padding-top: 200px;
+    font-weight: bold;
+    font-size: 25px;
+    background-repeat: no-repeat; background-size: cover; width: 100%; height: 70vh;
+}
+
+.last-text{
+    text-align: center;
+    padding: 60px;
+    height: 300px;
+}
+
+/* .produk-rp{
+    color: black;
+    padding-top: 50px;
+}
+
+.row-rpp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
+.card {
+    width: 100%;
+} */
+
+/* .customer-rp{
+    color: black;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.o-customer{
+    padding-top: 50px;
+} */
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(250px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#preloader img {
+    width: 100px;
+    height: auto;
+}
+
+.highlight {
+    color: red;
+}
+
+.card-header {
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+
+}
+
+/* #productList li {
+    color: black;
+}
+
+#productList li.active {
+    color: red;
+} */
+
+/* .dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    z-index: 1000;
+    padding: 0;
+}
+
+.dropdown-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} */
+
+/* .dropdown-items .dropdown-item {
+    padding: 10px;
+    text-align: left;
+} */
+
+

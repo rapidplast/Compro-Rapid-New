@@ -1,0 +1,66 @@
+body {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer {
+  background-color: #d7d1d1;
+  color: rgb(0, 0, 0);
+  padding: 30px 0; /* Menambah padding yang lebih baik */
+  font-size: 16px;
+  position: relative;
+}
+
+.footer .logo img {
+  max-width: 100px !important;/* Atur ukuran logo */
+  margin-bottom: 20px;
+}
+
+.footer .row1 {
+  margin-left: -80px;
+  max-width: 100px;
+  position: relative;
+}
+
+.footer .row {
+  display: flex; /* Gunakan Flexbox untuk baris ini */
+  justify-content: space-between; /* Jarak antar kolom menjadi merata */
+  align-items: flex-start; /* Pastikan kolom-kolom mulai dari atas */
+}
+
+.footer .col-md-2 {
+  padding-left: 10px;
+  flex: 1; /* Membuat setiap kolom mengambil ruang yang sama */
+}
+
+.footer .col-md-2 h5 {
+  font-size: 16px;
+  margin-bottom: 10px; 
+}
+
+.footer .col-md-2 ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer .col-md-2 ul a {
+  /* display: block;  */
+  color: red;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 5px; 
+}
+
+.footer .row1 img {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  max-width: 100px; /* Menentukan ukuran maksimum gambar */
+}
+
+

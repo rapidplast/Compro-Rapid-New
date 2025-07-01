@@ -1,0 +1,135 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header Styling */
+.join-team-header {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.top-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #524A4E;
+    color: white;
+}
+.highlight {
+    color: red;
+}
+
+.header-line {
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 10px auto;
+}
+
+.create-button {
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Job Listings */
+.job-listings {
+    margin-top: 50px;
+}
+
+.job-card {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.job-card h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-title .highlight {
+    color: red;
+}
+
+.job-card .card-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.job-card img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.btn-danger {
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.delete-btn, .update-btn {
+    width: 120px;
+    font-size: 14px;
+}
+
+.delete-btn i, .update-btn i {
+    margin-right: 5px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(250px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader img {
+    width: 100px;
+    height: auto;
+}
+
+.img-fluid {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+

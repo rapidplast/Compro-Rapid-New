@@ -15,31 +15,24 @@
     <div class="header">
         <h1>Join <span style="color: rgb(254, 255, 254);">Our Team</span></h1>
     </div>
-    <div style="padding-top: 60px; padding-left: 30px ; font-size: 30px">
+
+    <div style="padding-top: 60px; padding-left: 30px; font-size: 30px">
         <a href="/"><i class="icon fa-solid fa-angle-left"></i></a>
     </div>
 
     <div class="container">
-        <div class="card">
-            @foreach ($carriers as $carrier)
+        @foreach ($carriers as $carrier)
+            <div class="card">
                 <img src="{{ asset('storage/foto/' . $carrier->foto) }}" alt="Foto Jobdesk">
                 <div class="card-content">
                     <h2>{{ $carrier->penempatan }}: <span style="color: red;">{{ $carrier->jenis }}</span></h2>
                     <p>{{ $carrier->jobdesk }}</p>
                     <a href="/carrier/see_more/{{ $carrier->id }}" class="btn">See More</a>
                 </div>
-            @endforeach
-        </div>
-
-        {{-- <div class="card">
-            <img src="{{asset('assets/images/Carrier/image.png')}}" alt="Programmer Image">
-            <div class="card-content">
-                <h2>East Java Placement: <span style="color: red;">Programmer</span></h2>
-                <p>This position responsible for design and develop innovative and creative solutions to improve business processes through the implementation of Information Technology to achieve higher efficiency in time, cost, and quality.</p>
-                <a href="/carrier/see_more " class="btn">See More</a>
             </div>
-        </div> --}}
+        @endforeach
     </div>
+
 </body>
 
 </html>

@@ -15,9 +15,10 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 50px;
 }
 
 .header {
@@ -33,49 +34,64 @@ body::-webkit-scrollbar {
 }
 
 .card {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
 }
 
 .card img {
-    width: 45%; /* Atur lebar gambar lebih besar */
-    height: 300px; /* Atur tinggi gambar */
-    object-fit: cover; /* Gambar akan di-crop dengan proporsi */
-    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .card-content {
     flex: 1;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-content h2 {
-    font-size: 1.5rem;
-    color: #d2232a;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card-content h2 span {
+    color: red;
 }
 
 .card-content p {
-    margin: 10px 0;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d2232a;
+    display: inline-block !important;
+    padding: 6px 14px;
+    background-color: red;
     color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: auto !important;
+    max-width: fit-content !important;
 }
 
+
 .btn:hover {
-    background-color: #a91b1e;
+    background-color: darkred;
 }
 
 /* Media Query untuk Responsif */

@@ -30,7 +30,7 @@ class AdminController extends Controller
     }
     public function about_us()
     {
-        return view('About Us.about_us');
+        return view('about Us.about_us');
     }
     // public function product()
     // {

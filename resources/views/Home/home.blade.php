@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
 
 <div id="preloader">
-  <img src="{{ '/assets/images/logo.jpg' }}" alt="Loading...">
+  <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
 </div>
 
     <!-- Hero Section -->

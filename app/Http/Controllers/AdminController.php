@@ -26,11 +26,11 @@ class AdminController extends Controller
     }
     public function contact_us()
     {
-        return view('Contact Us.contact_us');
+        return view('contact_us.contact_us');
     }
     public function about_us()
     {
-        return view('about Us.about_us');
+        return view('about_us.About_us');
     }
     // public function product()
     // {

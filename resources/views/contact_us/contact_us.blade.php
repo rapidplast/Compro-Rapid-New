@@ -14,7 +14,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <div id="preloader">
-    <img src="{{ '/assets/images/logo.jpg' }}" alt="Loading...">
+    <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
 </div>
 
 

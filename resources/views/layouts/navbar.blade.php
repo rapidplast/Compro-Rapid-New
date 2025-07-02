@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapit Plast</title>
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
-    <link rel="icon" href="{{ asset('assets/images/logo.jpg') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/images/logo.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .nav-link {

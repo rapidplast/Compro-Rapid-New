@@ -8,6 +8,6 @@ class ContactUsController extends Controller
 {
     public function contact_us()
     {
-        return view('Contact Us.contact_us'); 
+        return view('contact_us.contact_us'); 
     }
 }

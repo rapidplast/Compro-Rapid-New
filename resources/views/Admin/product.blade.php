@@ -10,7 +10,7 @@
 @section('content')
 <link rel="stylesheet" href="{{ asset('assets/css/product.css') }}">
 <div id="preloader">
-    <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
+    <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
 
 <nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
@@ -20,7 +20,7 @@
 </nav>
 
 <section id="on-top">
-    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
+    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
         <div class="text-img">
             <h3><b>ONE - STOP RIGID <span style="color: red;">PACKAGING SOLUTION</span></b></h3>
             <p class="first-text m-0">Our Board of Directors and Management team consists of seasoned </p>
@@ -41,7 +41,7 @@
         <div class="container text-center">
             <div class="row align-items-center">
               <div class="col">
-                <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about_us/visi.png'}}" alt="">
               </div>
               <div class="col des-1">
                 <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b>
@@ -60,14 +60,14 @@
                 </p>
               </div>
               <div class="col">
-                <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about_us/visi.png'}}" alt="">
               </div>
             </div>
         </div>
         <div class="container text-center P-5">
             <div class="row align-items-center">
               <div class="col">
-                <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about_us/visi.png'}}" alt="">
               </div>
               <div class="col des-3">
                 <b><h5><i>PRODUCT <span style="color: red;">DESIGN</span></i></h5></b>

@@ -15,7 +15,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <div id="preloader">
-        <img src="{{ '/assets/images/logo.jpg' }}" alt="Loading...">
+        <img src="{{ asset('/assets/images/logo.jpg') }}" alt="Loading...">
     </div>
 
     <div class="top-text" style="background-image: url('{{ asset('assets/images/bg.jpeg') }}'); background-size: cover; background-position: center;">

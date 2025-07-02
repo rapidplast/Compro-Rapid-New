@@ -17,7 +17,9 @@
     </div>
 
     <div style="padding-top: 60px; padding-left: 30px; font-size: 30px">
-        <a href="/about_us"><i class="icon fa-solid fa-angle-left" style="color: purple;"></i></a>
+        <a href="{{ url('/about_us') }}"><i class="icon fa-solid fa-angle-left" style="color: purple;"></i></a>
+        <div class="back-button">
+    </div>
     </div>
 
     <div class="container">

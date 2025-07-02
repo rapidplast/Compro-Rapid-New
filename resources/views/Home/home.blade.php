@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
 
 <div id="preloader">
-  <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
+  <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
 
     <!-- Hero Section -->
@@ -21,7 +21,7 @@
             <div class="homee">
                 <img src="{{ asset('assets/images/home.jpg') }}" alt="Home" style="width: 100%">
             </div>
-            <div class="company" style="background-image: url('{{ asset('assets/images/about us/company.jpeg') }}'); width: 100%; height: 70vh; object-fit: cover;">
+            <div class="company" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); width: 100%; height: 70vh; object-fit: cover;">
                 <div class="overlay" style="text-align: center; padding-top: 190px;">
                     <h2 style="color: white; font-weight: bold; font-size: 58px; ">COMPANY</h2>
                     <a href="/company" class="btn" style="background: #c2c6ca; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 18px;">Learn More</a>

@@ -13,7 +13,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <div id="preloader">
-    <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
+    <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
 
 <nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
@@ -23,7 +23,7 @@
 </nav>
 
 <section id="on-top">
-    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;"></div>
+    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;"></div>
         <div class="text-img">
             <h3><b>ONE - STOP RIGID <span style="color: red;">PACKAGING SOLUTION</span></b></h3>
             <p class="first-text m-0">Our Board of Directors and Management team consists of seasoned </p>
@@ -51,7 +51,7 @@
                     This rewritten version maintains the intent of emphasizing sustainability and community impact while localizing the context for Rapidplast.</p>
               </div>
               <div class="col p-0">
-                <img class="img-des" style="width: 80dvw; max-width: 500px; height: 374px" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                <img class="img-des" style="width: 80dvw; max-width: 500px; height: 374px" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
                 {{-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -136,7 +136,7 @@
                 <div class="col-auto mt-5">
                     <div class="card p-0" style="width: 200px; height: 300px;">
                         <div class="card-body p-0">
-                            <img src="{{'/assets/images/about us/visi.png'}}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                            <img src="{{asset('/assets/images/about_us/visi.png')}}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
                             <div class="text-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
                                 <p style="margin: 0; font-size: 18px;">DESKRIPSI</p>
                             </div>
@@ -149,7 +149,7 @@
                 <div class="col-auto mt-5">
                     <div class="card p-0" style="width: 200px; height: 300px;">
                         <div class="card-body p-0">
-                            <img src="{{'/assets/images/about us/visi.png'}}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                            <img src="{{asset('/assets/images/about_us/visi.png')}}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
                             <div class="text-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
                                 <p style="margin: 0; font-size: 18px;">DESKRIPSI</p>
                             </div>
@@ -162,7 +162,7 @@
                 <div class="col-auto mt-5">
                     <div class="card p-0" style="width: 200px; height: 300px;">
                         <div class="card-body p-0">
-                            <img src="{{'/assets/images/about us/visi.png'}}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                            <img src="{{asset('/assets/images/about_us/visi.png')}}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
                             <div class="text-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
                                 <p style="margin: 0; font-size: 18px;">DESKRIPSI</p>
                             </div>
@@ -192,7 +192,7 @@
             <h4 class="m-0">WINNER <span style="color: red">PROJECT</span></h4>
         </div>
         <div class="img-first" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-            <img src="{{'/assets/images/about us/visi.png'}}" alt="" style="width: 690px; height: 435px; border-radius: 15px;">
+            <img src="{{asset('/assets/images/about_us/visi.png')}}" alt="" style="width: 690px; height: 435px; border-radius: 15px;">
         </div>    
         <div class="des-img-first">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi officia architecto suscipit ratione, qui dolor dolore, laborum aut necessitatibus officiis recusandae. Fugiat sint dolores, quae magni consectetur laborum corporis neque voluptates aliquid totam quisquam et voluptas similique sed doloribus eveniet nemo at facilis dicta ipsa sapiente mollitia nobis, aspernatur nostrum? Voluptas cupiditate vel vitae possimus culpa quod est porro consectetur saepe reiciendis, ea blanditiis explicabo fugit eligendi perferendis fugiat dicta illo voluptate soluta et sit totam magni? Quaerat sed ex, praesentium dignissimos iure laborum dolorem provident quae dolore quod unde atque voluptate rem nam. Incidunt id mollitia nostrum dolores odio!</p>
@@ -201,7 +201,7 @@
             <div class="container text-center">
                 <div class="row align-items-center">
                   <div class="col">
-                    <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                    <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
                   </div>
                   <div class="col des-1">
                     {{-- <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b> --}}
@@ -216,7 +216,7 @@
                     <p>DESKRIPSI</p>
                   </div>
                   <div class="col">
-                    <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                    <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
                   </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/inovation.css') }}">
     <div id="preloader"> 
-        <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
+        <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
     </div>
 </head>
 
@@ -56,7 +56,7 @@
         <div class="container text-center">
             <div class="row align-items-start">
               <div class="col">
-                <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%; margin-top: 35px; border-radius: 10px;" src="{{'/assets/images/about us/visi.png'}}" alt="">
+                <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%; margin-top: 35px; border-radius: 10px;" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
               </div>
               <div class="col">
                 <div class="container text-center">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col p-0">
                     <img class="visi" style="width: 80dvw; max-width: 550px; height: 100%; border-radius: 30px;"
-                        src="{{ '/assets/images/inovation/inovation1.jpeg' }}" alt="">
+                        src="{{ asset('/assets/images/inovation/inovation1.jpeg') }}" alt="">
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
             <div class="row align-items-start">
                 <div class="col p-0">
                     <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%; border-radius: 10px;"
-                        src="{{ '/assets/images/inovation/inovation2.jpeg' }}" alt="">
+                        src="{{ asset('/assets/images/inovation/inovation2.jpeg') }}" alt="">
                 </div>
             </div>
         </div>

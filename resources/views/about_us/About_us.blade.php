@@ -16,7 +16,7 @@
 
 
 <div id="preloader">
-    <img src="{{ '/assets/images/logo.png' }}" alt="Loading...">
+    <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
 
 <nav class="nav2" style="background-color: rgba(235, 225, 225, 0.573); padding-top: 140px;justify-content: flex-end;">
@@ -27,7 +27,7 @@
     <a href="#bo" class="a">Branch Office</a>
 </nav>
 
-<div class="top-text" style="background-image: url('{{ asset('assets/images/about us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
+<div class="top-text" style="background-image: url('{{ 'assets/images/about_us/company.jpeg' }}'); background-size: cover; background-position: center; margin-top: 80px;">
     <div class="text-2">
     <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: 50px;">LEADERSHIP WITH</p> 
     <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">EXTENSIVE INDUSTRY EXPERIENCE</p> 
@@ -51,7 +51,7 @@
     </div>
     <div id="vimi" class="row align-items-start fade-in-up p-0">
         <div class="col">
-            <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/visi.png'}}" alt="">
+            <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
         </div>
         <div class="col visi-teks p-4">
             <i><h4 style="text-align: center;font-weight: bold; font-size: 28px; ">OUR <span class="highlight" style="font-weight: bold; font-size: 30px;">VISION</span></h4></i>
@@ -73,14 +73,14 @@
             </ul>
         </div>
         <div class="col order-1 order-md-2">
-            <img class="visi" style="margin-top: 120px; width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about us/misi.png'}}" alt="">
+            <img class="visi" style="margin-top: 120px; width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/misi.png')}}" alt="">
         </div>
     </div>
 
 <div id="motto" style="display: flex; align-items: center; background-color: #EAE2E6;  font-family: 'Times New Roman', Times, serif;">
         <div style="flex: 1; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
           <div style="width: 100%; height: 100%; position: relative;">
-            <img src="{{'/assets/images/about us/visi.png'}}" alt="Responsibility" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            <img src="{{asset('/assets/images/about_us/visi.png')}}" alt="Responsibility" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
           </div>
         </div>
         <div style="flex: 1; padding: 20px; background-color: grey; color: white; text-align: center;">

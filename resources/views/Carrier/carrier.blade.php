@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Our Team</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/carrier.css') }}">
-    <link rel="icon" href="{{ asset('assets/images/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('assets/css/carrier.css')}}">
+    <link rel="icon" href="{{asset('assets/images/logo.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -17,7 +17,7 @@
     </div>
 
     <div style="padding-top: 60px; padding-left: 30px; font-size: 30px">
-        <a href="{{ url('/about_us') }}"><i class="icon fa-solid fa-angle-left" style="color: purple;"></i></a>
+        <a href="{{url('/about_us')}}"><i class="icon fa-solid fa-angle-left" style="color: purple;"></i></a>
         <div class="back-button">
     </div>
     </div>
@@ -40,11 +40,11 @@
         @else
             @foreach ($carriers as $carrier)
                 <div class="card">
-                    <img src="{{ asset('storage/foto/' . $carrier->foto) }}" alt="Foto Jobdesk">
+                    <img src="{{('storage/foto/' . $carrier->foto)}}" alt="Foto Jobdesk">
                     <div class="card-content">
                         <h2>{{ $carrier->penempatan }}: <span style="color: red;">{{ $carrier->jenis }}</span></h2>
                         <p>{{ $carrier->jobdesk }}</p>
-                        <a href="/carrier/see_more/{{ $carrier->id }}" class="btn">See More</a>
+                        <a href="/carrier/see_more/{{$carrier->id}}" class="btn">See More</a>
                     </div>
                 </div>
             @endforeach

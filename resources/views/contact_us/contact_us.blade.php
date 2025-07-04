@@ -10,11 +10,11 @@
 
 @section('content')
 
-<link rel="stylesheet" href="{{ asset('assets/css/contactus.css') }}">
+<link rel="stylesheet" href="{{asset('assets/css/contactus.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <div id="preloader">
-    <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
+    <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
 </div>
 
 

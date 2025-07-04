@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Our Team</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/carrier_see_more.css') }}">
-    <link rel="icon" href="{{ asset('assets/images/logo.jpg') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('assets/css/carrier_see_more.css')}}">
+    <link rel="icon" href="{{asset('assets/images/logo.jpg')}}" type="image/x-icon">
 </head>
 
 <body>
@@ -20,9 +20,9 @@
         </nav>
 
         <div class="image-container">
-            {{-- <img src="{{ asset('assets/images/Carrier/image.png') }}" alt="Programmer at work"> --}}
-            <img src="{{ asset('storage/foto/' . $carrier->foto) }}" class="img-fluid rounded mb-3"
-                alt="{{ $carrier->jobdesk }}">
+            {{-- <img src="{{asset('assets/images/Carrier/image.png')}}" alt="Programmer at work"> --}}
+            <img src="{{asset('storage/foto/' . $carrier->foto)}}" class="img-fluid rounded mb-3"
+                alt="{{$carrier->jobdesk}}">
         </div>
 
         <div class="content">

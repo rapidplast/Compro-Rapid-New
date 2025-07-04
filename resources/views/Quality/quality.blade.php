@@ -9,11 +9,11 @@
 @endsection
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('assets/css/quality.css') }}">
+<link rel="stylesheet" href="{{asset('assets/css/quality.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <div id="preloader">
-    <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
+    <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
 </div>
 
 <nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">

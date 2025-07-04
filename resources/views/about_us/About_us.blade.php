@@ -10,13 +10,13 @@
 
 @section('content')
 
-<link rel="stylesheet" href="{{ asset('assets/css/aboutus.css') }}">
+<link rel="stylesheet" href="{{asset('assets/css/aboutus.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
 
 <div id="preloader">
-    <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
+    <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
 </div>
 
 <nav class="nav2" style="background-color: rgba(235, 225, 225, 0.573); padding-top: 140px;justify-content: flex-end;">
@@ -27,7 +27,7 @@
     <a href="#bo" class="a">Branch Office</a>
 </nav>
 
-<div class="top-text" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
+<div class="top-text" style="background-image: url('{{asset('assets/images/about_us/company.jpeg')}}'); background-size: cover; background-position: center; margin-top: 80px;">
     <div class="text-2">
     <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: 50px;">LEADERSHIP WITH</p> 
     <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">EXTENSIVE INDUSTRY EXPERIENCE</p> 
@@ -107,7 +107,7 @@
 </div>
     <div class="container text-center">
         <div class="d-flex relative">
-            <img src=" {{ asset('assets/images/home/peta.png') }}" alt="" style="width: 100dvw; margin-bottom: 0px;">
+            <img src=" {{asset('assets/images/home/peta.png')}}" alt="" style="width: 100dvw; margin-bottom: 0px;">
             <div class="position-absolute " style="left: 10%;">
                 <div class="card" style="border-radius: 15px;">
                     <div class="card-body" style="border-radius: 15px;">

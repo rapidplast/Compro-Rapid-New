@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('assets/css/inovation.css') }}">
+    <link rel="stylesheet" href="{{asset('assets/css/inovation.css')}}">
     <div id="preloader"> 
-        <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
+        <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
     </div>
 </head>
 
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col p-0">
                     <img class="visi" style="width: 80dvw; max-width: 550px; height: 100%; border-radius: 30px;"
-                        src="{{ asset('/assets/images/inovation/inovation1.jpeg') }}" alt="">
+                        src="{{asset('/assets/images/inovation/inovation1.jpeg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
             <div class="row align-items-start">
                 <div class="col p-0">
                     <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%; border-radius: 10px;"
-                        src="{{ asset('/assets/images/inovation/inovation2.jpeg') }}" alt="">
+                        src="{{asset('/assets/images/inovation/inovation2.jpeg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -146,9 +146,9 @@
                         <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
                     </div>
                     <div class="dropdown-content">
-                        <img src="{{ asset('assets/images/inovation/oli.jpeg') }}" alt="oli" width="300"
+                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
                             height="200">
-                        <img src="{{ asset('assets/images/inovation/tutup-oli.jpeg') }}" alt="tutup-oli"
+                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
                             width="300" height="200" style="padding-top: 20px;">
                     </div>
                     <div class="accordion-item"
@@ -157,9 +157,9 @@
                         <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
                     </div>
                     <div class="dropdown-content">
-                        <img src="{{ asset('assets/images/inovation/oli.jpeg') }}" alt="oli" width="300"
+                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
                             height="200">
-                        <img src="{{ asset('assets/images/inovation/tutup-oli.jpeg') }}" alt="tutup-oli"
+                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
                             width="300" height="200" style="padding-top: 20px;">
                     </div>
                     <div class="accordion-item"
@@ -168,9 +168,9 @@
                         <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
                     </div>
                     <div class="dropdown-content">
-                        <img src="{{ asset('assets/images/inovation/oli.jpeg') }}" alt="oli" width="300"
+                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
                             height="200">
-                        <img src="{{ asset('assets/images/inovation/tutup-oli.jpeg') }}" alt="tutup-oli"
+                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
                             width="300" height="200" style="padding-top: 20px;">
                     </div>
                     <div class="accordion-item"
@@ -179,9 +179,9 @@
                         <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
                     </div>
                     <div class="dropdown-content">
-                        <img src="{{ asset('assets/images/inovation/oli.jpeg') }}" alt="oli" width="300"
+                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
                             height="200">
-                        <img src="{{ asset('assets/images/inovation/tutup-oli.jpeg') }}" alt="tutup-oli"
+                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
                             width="300" height="200" style="padding-top: 20px;">
                     </div>
                 </div>
@@ -219,14 +219,14 @@
                     @foreach ($inovations['Personal Care'] as $inov)
                         <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card position-relative" style="border-radius: 10px;">
-                                <form action="{{ route('hapus.inovation', $inov->id) }}" method="POST"
+                                <form action="{{route('hapus.inovation', $inov->id)}}" method="POST"
                                     class="position-absolute" style="top: 5px; right: 5px;">
                                     @csrf
                                     <button type="submit" class="btn-close" aria-label="Close"></button>
                                 </form>
                                 <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{ asset('storage/foto/' . $inov->foto) }}"
-                                    alt="{{ $inov->judul }}" style="width: 100%; border-radius: 10px;">
+                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
+                                    alt="{{$inov->judul}}" style="width: 100%; border-radius: 10px;">
                                 <div class="card-description">{{ $inov->keterangan }}</div>
                             </div>
                         </div>
@@ -243,14 +243,14 @@
                     @foreach ($inovations['Pharmacy'] as $inov)
                         <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card" style="border-radius: 10px;">
-                                <form action="{{ route('hapus.inovation', $inov->id) }}" method="POST"
+                                <form action="{{route('hapus.inovation', $inov->id)}}" method="POST"
                                     class="position-absolute" style="top: 5px; right: 5px;">
                                     @csrf
                                     <button type="submit" class="btn-close" aria-label="Close"></button>
                                 </form>
                                 <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{ asset('storage/foto/' . $inov->foto) }}"
-                                    alt="{{ $inov->judul }}" style="border-radius: 10px;">
+                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
+                                    alt="{{$inov->judul}}" style="border-radius: 10px;">
                                 <div class="card-description">{{ $inov->keterangan }}</div>
                             </div>
                         </div>
@@ -273,8 +273,8 @@
                                     <button type="submit" class="btn-close" aria-label="Close"></button>
                                 </form>
                                 <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{ asset('storage/foto/' . $inov->foto) }}"
-                                    alt="{{ $inov->judul }}" style="border-radius: 10px;">
+                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
+                                    alt="{{$inov->judul}}" style="border-radius: 10px;">
                                 <div class="card-description">{{ $inov->keterangan }}</div>
                             </div>
                         </div>
@@ -290,14 +290,14 @@
                     @foreach ($inovations['Food dan Beverage'] as $inov)
                         <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card" style="border-radius: 10px;">
-                                <form action="{{ route('hapus.inovation', $inov->id) }}" method="POST"
+                                <form action="{{route('hapus.inovation', $inov->id)}}" method="POST"
                                     class="position-absolute" style="top: 5px; right: 5px;">
                                     @csrf
                                     <button type="submit" class="btn-close" aria-label="Close"></button>
                                 </form>
                                 <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{ asset('storage/foto/' . $inov->foto) }}"
-                                    alt="{{ $inov->judul }}" style="border-radius: 10px;">
+                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
+                                    alt="{{$inov->judul}}" style="border-radius: 10px;">
                                 <div class="card-description">{{ $inov->keterangan }}</div>
                             </div>
                         </div>

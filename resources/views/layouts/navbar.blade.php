@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapit Plast</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
-    <link rel="icon" href="{{ asset('assets/images/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('assets/css/navbar.css')}}">
+    <link rel="icon" href="{{asset('assets/images/logo.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .nav-link {
@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="Rapid Plast Logo" style="height: 70px;">
+            <img src="{{asset('assets/images/logo.png')}}" alt="Rapid Plast Logo" style="height: 70px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

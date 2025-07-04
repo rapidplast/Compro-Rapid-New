@@ -41,7 +41,7 @@
         <div class="container text-center">
             <div class="row align-items-center">
               <div class="col">
-                <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about_us/visi.png'}}" alt="">
+                <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
               </div>
               <div class="col des-1">
                 <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b>
@@ -60,14 +60,14 @@
                 </p>
               </div>
               <div class="col">
-                <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about_us/visi.png'}}" alt="">
+                <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
               </div>
             </div>
         </div>
         <div class="container text-center P-5">
             <div class="row align-items-center">
               <div class="col">
-                <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{'/assets/images/about_us/visi.png'}}" alt="">
+                <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
               </div>
               <div class="col des-3">
                 <b><h5><i>PRODUCT <span style="color: red;">DESIGN</span></i></h5></b>

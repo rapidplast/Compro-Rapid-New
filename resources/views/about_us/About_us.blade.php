@@ -27,7 +27,7 @@
     <a href="#bo" class="a">Branch Office</a>
 </nav>
 
-<div class="top-text" style="background-image: url('{{ 'assets/images/about_us/company.jpeg' }}'); background-size: cover; background-position: center; margin-top: 80px;">
+<div class="top-text" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
     <div class="text-2">
     <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: 50px;">LEADERSHIP WITH</p> 
     <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">EXTENSIVE INDUSTRY EXPERIENCE</p> 

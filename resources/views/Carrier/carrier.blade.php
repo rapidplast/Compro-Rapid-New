@@ -44,7 +44,11 @@
                     <div class="card-content">
                         <h2>{{ $carrier->penempatan }}: <span style="color: red;">{{ $carrier->jenis }}</span></h2>
                         <p>{{ $carrier->jobdesk }}</p>
+<<<<<<< HEAD
                         <a href="{{ url('carrier/see_more/' . $carrier->id) }}" class="btn">See More</a>
+=======
+                        <a href="/carrier/see_more/{{$carrier->id}}" class="btn">See More</a>
+>>>>>>> b9ae55a2b27ad3c1b319d99fcda2f0e53122d126
                     </div>
                 </div>
             @endforeach

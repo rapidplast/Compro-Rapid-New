@@ -5,7 +5,11 @@
 @endsection
 
 @section('content')
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{url('public/assets/css/admin/carrierr.css')}}">
+=======
+    <link rel="stylesheet" href="{{asset('assets/css/Admin/carrierr.css')}}">
+>>>>>>> b9ae55a2b27ad3c1b319d99fcda2f0e53122d126
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 

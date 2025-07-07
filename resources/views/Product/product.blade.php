@@ -209,10 +209,32 @@
     <div class="bottles">
         <b ><h4 class="m-0">A BROAD SELECTION OF <span style="color: red">STANDARDIZED PRODUCTS</span></h4></b>
     </div>
-    <div class="bottles-img">
-        <h1>BOTTLES</h1>
-        <p>HDPE, LDPE, PP, 6-layer Coex, PET, PET-G</p>
+<section id="board" style="background-color: #EAE2E6;">
+<section id="board" style="background-color: #EAE2E6;">
+<section id="board" style="background-color: #EAE2E6;">
+<section id="board" style="background-color: #EAE2E6;">
+    <div class="bottles-img position-relative" style="overflow: hidden; height: 500px;">
+        
+        <!-- Gambar Background -->
+        <img src="{{ asset('assets/images/bottle.png') }}" alt="Bottles"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
+
+        <!-- Teks Overlay -->
+        <div class="position-absolute" style="bottom: 40px; left: 60px; z-index: 1; color: white; text-align: left;">
+            <h1 style="font-weight: bold; font-size: 48px; margin: 0;">BOTTLES</h1>
+            <p style="font-weight: bold; font-size: 20px; margin: 5px 0 0;">HDPE, LDPE, PP, 6-layer Coex, PET, PET-G</p>
+        </div>
+        
     </div>
+</section>
+
+</section>
+
+</section>
+
+</section>
+
+
 </section>
 
 <section id="" style="background-color: #EAE2E6;">

@@ -4,13 +4,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="{{ asset('assets/css/admin/create_carrier.css') }}">
+<link rel="stylesheet" href="{{asset('assets/css/admin/create_carrier.css')}}">
 <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="height: 60px; background-color: #524A4E"></nav>
 
 <div class="container">
     <div class="row justify-content-center">
         <div style="padding-top: 60px; padding-left: 30px ; font-size: 30px">
-            <a href="/admin/carrier"><i class="icon fa-solid fa-angle-left"></i></a>
+            <a href="{{ url('admin/carrier') }}"><i class="icon fa-solid fa-angle-left"></i></a>
         </div>
         <div class="col-12 text-center mb-4">
             <h1 class="headline" style="font-size: 1.5rem;">Create Carrier</h1>

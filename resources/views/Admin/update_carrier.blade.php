@@ -3,13 +3,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="{{ asset('assets/css/admin/update_carrier.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/css/admin/update_carrier.css') }}">
 
 <nav class="navbar navbar-dark" style="height: 60px; background-color: #524A4E"></nav>
 
 
 <div style="padding-top: 60px; padding-left: 30px ; font-size: 30px">
-    <a href="/admin/carrier"><i class="icon fa-solid fa-angle-left"></i></a>
+    <a href="{{ url('admin/carrier') }}"><i class="icon fa-solid fa-angle-left"></i></a>
 </div>
 <div class="headline text-center mb-4">
     <p class="h4">Update Carrier</p>
@@ -79,7 +79,7 @@
                 <div class="mb-3 w-100">
                     <label for="inputGambar1" class="form-label text-dark fw-bold">Gambar</label>
                     <div id="previewZone" class="d-flex align-items-center">
-                        <img src="{{ !empty($carrier->foto) ? asset('storage/foto/' . $carrier->foto) : asset('assets/images/userdefault.png') }}"
+                        <img src="{{ !empty($carrier->foto) ? asset('storage/foto/' . $carrier->foto) : url('public/assets/images/userdefault.png') }}"
                             class="rounded-circle" width="100" height="100" alt="Profile Logo" id="gambarKanan">
                         <button type="button" class="btn btn-danger ms-3" id="removeImageButton">Remove</button>
                     </div>
@@ -159,7 +159,7 @@
         const previewZone = document.getElementById('gambarKanan');
         const fileInput = document.getElementById('inputGambar1');
 
-        previewZone.src = '{{ asset('assets/images/userdefault.png') }}'; 
+        previewZone.src = '{{ url('public/assets/images/userdefault.png') }}'; 
         fileInput.value = ''; 
     });
 

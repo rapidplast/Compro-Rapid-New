@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <link rel="stylesheet" href="{{ asset('assets/css/Admin/carrierr.css') }}">
+    <link rel="stylesheet" href="{{url('public/assets/css/admin/carrierr.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -14,7 +14,7 @@
     </div>
 
     <div class="container text-end position-relative">
-        <a href="/create_carrier"><button class="btn btn-danger create-button position-absolute top-0 end-0 me-4 mt-4">
+        <a href="{{ route('create') }}"><button class="btn btn-danger create-button position-absolute top-0 end-0 me-4 mt-4">
                 <i class="bi bi-tools"></i> Create
             </button></a>
     </div>
@@ -49,11 +49,11 @@
                             onclick="window.location.href='/carrier/see_more/{{ $carrier->id }}';">See More</button>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="{{ asset('storage/foto/' . $carrier->foto) }}" class="img-fluid rounded mb-3"
-                            alt="{{ $carrier->jobdesk }}">
+                        <img src="{{asset('storage/foto/' . $carrier->foto)}}" class="img-fluid rounded mb-3"
+                            alt="{{$carrier->jobdesk}}">
                         <div class="d-flex justify-content-center">
                             <!-- Delete Button -->
-                            <form action="{{ route('delete', $carrier->id) }}" method="GET">
+                            <form action="{{route('delete', $carrier->id)}}" method="GET">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-secondary delete-btn me-2" type="submit">

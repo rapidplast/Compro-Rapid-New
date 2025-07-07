@@ -10,7 +10,7 @@
             <!-- Konten teks -->
             <div class="teks text-center mt-4">
                 <h2 style=" font-weight: 700;">Login <span class="highlight">Admin</span></h2>
-                <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" style="width: 200px; padding-top: 20px;">
+                <img src="{{asset('assets/images/logo.png')}}" alt="Logo" style="width: 200px; padding-top: 20px;">
             </div>
 
             <!-- Konten form -->

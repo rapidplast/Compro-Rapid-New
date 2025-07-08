@@ -20,15 +20,15 @@
     </div>
 </head>
 
-<nav class="dua" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
+<!-- <nav class="dua" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
     <a href="#id" class="a">Turning Ideas Into Solution</a>
     <a href="#ino" class="a">Innovative Solution</a>
     <a href="#collab" class="a">Collaboration</a>
     <a href="#product" class="a">Distinctive</a>
-</nav>
+</nav>-->
 
 <body>
-    <section class="inovasi" style="background-image: url('{{asset('assets/images/inovation/rapid4.jpeg') }}'); background-size: cover; background-position: center;">
+    <section class="inovasi" style="background-image: url('{{asset('assets/images/home/culture2.jpeg') }}'); background-size: cover; background-position: center;">
         <br>
         <div class="container">
             <div class="inovasi">
@@ -37,7 +37,6 @@
     <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">August 1, 1992, established a manufacturer of plastic packaging </p>
     <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">toothbrushes, and plastic tubes, which is a subsidiary </p>
     <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);"> of Dynapack Asia, serving leading brands across Asia</p>
-                
         </div>
     </section>
 

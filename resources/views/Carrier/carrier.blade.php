@@ -16,10 +16,10 @@
         <h1>Join <span style="color: rgb(254, 255, 254);">Our Team</span></h1>
     </div>
 
-    <div style="padding-top: 60px; padding-left: 30px; font-size: 30px">
-        <a href="{{url('/about_us')}}"><i class="icon fa-solid fa-angle-left" style="color: purple;"></i></a>
-        <div class="back-button">
-    </div>
+    <div style="padding-top: 60px; padding-left: 30px; font-size: 30px;">
+        <a href="{{ url('/about_us') }}">
+            <i class="icon fa-solid fa-angle-left" style="color: purple;"></i>
+        </a>
     </div>
 
     <div class="container">
@@ -40,15 +40,13 @@
         @else
             @foreach ($carriers as $carrier)
                 <div class="card">
-                    <img src="{{('storage/foto/' . $carrier->foto)}}" alt="Foto Jobdesk">
+                    <img src="{{asset('storage/foto/' . $carrier->foto)}}" alt="Foto Jobdesk">
                     <div class="card-content">
-                        <h2>{{ $carrier->penempatan }}: <span style="color: red;">{{ $carrier->jenis }}</span></h2>
+                        <h2>{{ $carrier->penempatan }}: 
+                            <span style="color: red;">{{ $carrier->jenis }}</span>
+                        </h2>
                         <p>{{ $carrier->jobdesk }}</p>
-<<<<<<< HEAD
                         <a href="{{ url('carrier/see_more/' . $carrier->id) }}" class="btn">See More</a>
-=======
-                        <a href="/carrier/see_more/{{$carrier->id}}" class="btn">See More</a>
->>>>>>> b9ae55a2b27ad3c1b319d99fcda2f0e53122d126
                     </div>
                 </div>
             @endforeach

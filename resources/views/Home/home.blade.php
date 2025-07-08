@@ -11,10 +11,6 @@
 
     <link rel="stylesheet" href="{{asset('assets/css/home.css')}}">
 
-<div id="preloader">
-  <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
-</div>
-
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="home">

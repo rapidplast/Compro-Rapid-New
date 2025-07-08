@@ -13,18 +13,19 @@
     <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
 
-<nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
+<!--<nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
     <a href="#knowledge" class="a">Knowledge Through Experience</a>
     <a href="#product" class="a">Products & Service</a>
     <a href="#board" class="a">Broad Selection</a>
-</nav>
+</nav>-->
 
 <section id="on-top">
     <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
         <div class="text-img">
-            <h3><b>ONE - STOP RIGID <span style="color: red;">PACKAGING SOLUTION</span></b></h3>
-            <p class="first-text m-0">Our Board of Directors and Management team consists of seasoned </p>
-            <p class="second-text p-0">professionals with extensive experience in the rigid plastic packaging industry under the leadership of ...... and ......</p>
+            <h3><b><span style="color: white;">ONE - STOP RIGID </span></b></h3>
+            <h3><b><span style="color: red;">PACKAGING SOLUTION</span></b></h3>
+            <p class="first-text m-0"><span style="color: white;">Our Board of Directors and Management team consists of seasoned </p>
+            <p class="second-text p-0"><span style="color: white;">professionals with extensive experience in the rigid plastic packaging industry under the leadership of ...... and ......</p>
         </div>
     </div>
 </section>

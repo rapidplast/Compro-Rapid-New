@@ -32,10 +32,6 @@ class AdminController extends Controller
     {
         return view('about_us.About_us');
     }
-    // public function product()
-    // {
-    //     return view('Product.product');
-    // }
     public function sertifikasi()
     {
         return view('Sertifikasi.sertifikasi');

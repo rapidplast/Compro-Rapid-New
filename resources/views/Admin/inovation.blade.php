@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inovation</title>
+    <title>Rapid Plast</title>
         @if (auth()->check())
         @include('layouts.navbar_admin')
     @else
@@ -21,12 +21,12 @@
     </div>
 </head>
 
-<nav class="dua" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
+<!--<nav class="dua" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
     <a href="#id" class="a">Turning Ideas Into Solution</a>
     <a href="#ino" class="a">Innovative Solution</a>
     <a href="#collab" class="a">Collaboration</a>
     <a href="#product" class="a">Distinctive</a>
-</nav>
+</nav>-->
 
 <body>
     <section class="inovasi" style="background-image: url('{{asset('assets/images/inovation/rapid4.jpeg') }}'); background-size: cover; background-position: center;">

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Inovation;
+use App\Models\inovation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 

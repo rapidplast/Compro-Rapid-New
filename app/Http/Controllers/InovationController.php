@@ -11,12 +11,12 @@ class InovationController extends Controller
     public function inovation()
     {
         $categories = ['Personal Care', 'Pharmacy', 'Food dan Beverage'];
-        $inovation = Inovation::all();
+        $inovation = inovation::all();
 
         $inovations = [
-            'Personal Care' => Inovation::where('kategory', 'Personal Care')->get(),
-            'Pharmacy' => Inovation::where('kategory', 'Pharmacy')->get(),
-            'Food dan Beverage' => Inovation::where('kategory', 'Food dan Beverage')->get(),
+            'Personal Care' => inovation::where('kategory', 'Personal Care')->get(),
+            'Pharmacy' => inovation::where('kategory', 'Pharmacy')->get(),
+            'Food dan Beverage' => inovation::where('kategory', 'Food dan Beverage')->get(),
         ];
 
         return view('inovation.inovation', compact('categories', 'inovations', 'inovation'));
@@ -46,7 +46,7 @@ class InovationController extends Controller
             $photo = $filename;
         }
 
-        $inovation = new Inovation([
+        $inovation = new inovation([
             'kategory' => $request->input('kategory'),
             'judul' => $request->input('judul'),
             'foto' => $photo,
@@ -63,9 +63,9 @@ class InovationController extends Controller
         $categories = ['Personal Care', 'Pharmacy', 'Food dan Beverage'];
 
         $inovations = [
-            'Personal Care' => Inovation::where('kategory', 'Personal Care')->get(),
-            'Pharmacy' => Inovation::where('kategory', 'Pharmacy')->get(),
-            'Food dan Beverage' => Inovation::where('kategory', 'Food dan Beverage')->get(),
+            'Personal Care' => inovation::where('kategory', 'Personal Care')->get(),
+            'Pharmacy' => inovation::where('kategory', 'Pharmacy')->get(),
+            'Food dan Beverage' => inovation::where('kategory', 'Food dan Beverage')->get(),
         ];
 
         return view('admin.inovation', compact('categories', 'inovations'));
@@ -74,7 +74,7 @@ class InovationController extends Controller
     public function hapus(string $id)
     {
         try {
-            $inovation = Inovation::findOrFail($id);
+            $inovation = inovation::findOrFail($id);
             $inovation->delete();
             return redirect()->back()->with('success', 'Data berhasil dihapus.');
         } catch (\Exception $e) {

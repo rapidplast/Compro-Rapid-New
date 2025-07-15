@@ -259,7 +259,7 @@
     class="box mt-3" 
     style="background-color: red; position: absolute; right: 0; top: 45%; transform: translateY(-5%); height: 280px; width: 50px;">
 </div>
-    <div class="fade-in-up align-self-md-start " style="margin-bottom: 70px">
+    <div class="fade-in-up align-self-md-start" style="margin-bottom: 70px">
         <div 
         class="box mt-3" 
         style="background-color: red; position: absolute; left: -100px; top: 180%; transform: translateY(-5%); height: 280px; width: 50px;">

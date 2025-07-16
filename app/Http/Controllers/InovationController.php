@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Inovation;
+use App\Models\inovation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -19,7 +19,7 @@ class InovationController extends Controller
             'Food dan Beverage' => Inovation::where('kategory', 'Food dan Beverage')->get(),
         ];
 
-        return view('inovation.inovation', compact('categories', 'inovations', 'inovation'));
+        return view('Inovation.inovation', compact('categories', 'inovations', 'inovation'));
     }
 
     public function create(Request $request)
@@ -68,7 +68,7 @@ class InovationController extends Controller
             'Food dan Beverage' => Inovation::where('kategory', 'Food dan Beverage')->get(),
         ];
 
-        return view('admin.inovation', compact('categories', 'inovations'));
+        return view('Admin.inovation', compact('categories', 'inovations'));
     }
 
     public function hapus(string $id)

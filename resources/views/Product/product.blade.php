@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="{{ asset('assets/images/home/tub.jpeg') }}" style="width: 100%; height: 110px; margin-top: 10%;"
+                        <img src="{{asset('assets/images/home/tub.jpeg')}}" style="width: 100%; height: 110px; margin-top: 10%;"
                             alt="">
                         <p style="padding: 10px;">Tube packaging is ideal for thick liquids and pastes,
                              including industrial chemicals, automotive products, medical ointments, and artistic pigments.</p>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="{{ asset('assets/images/home/cek.jpg') }}" style="width: 100%; height: 110px; margin-top: 10%;"
+                        <img src="{{asset('assets/images/home/cek.jpg')}}" style="width: 100%; height: 110px; margin-top: 10%;"
                             alt="">
                         <p style="padding: 10px;">An essential component of plastic packaging for packing home goods,
                             personal care products, and groceries.</p>
@@ -162,7 +162,7 @@
         <div class="d-flex flex-wrap justify-content-between ">
             <div class="w-50 d-flex flex-md-row flex-column justify-content-start p-2">
                 <div style="width: 100%; max-width: 150px">
-                    <img src="{{ asset('assets/images/home/icon1.png') }}" style="width: 100%;" alt="">
+                    <img src="{{asset('assets/images/home/icon1.png')}}" style="width: 100%;" alt="">
                 </div>
                 <div class="text-start">
                     <b class="highlight">QUALITY</b>
@@ -182,7 +182,7 @@
         <div class="d-flex flex-wrap justify-content-between ">
             <div class="w-50 d-flex flex-md-row flex-column justify-content-start p-2 gap-3">
                 <div style="width: 100%; max-width: 150px">
-                    <img src="{{ asset('assets/images/home/icon3.png') }}" style="width: 60%;" alt="">
+                    <img src="{{asset('assets/images/home/icon3.png')}}" style="width: 60%;" alt="">
                 </div>
                 <div class="text-start">
                     <b class="highlight">QUALITY</b>
@@ -194,7 +194,7 @@
             </div>
             <div class="w-50 d-flex flex-md-row flex-column justify-content-start p-2 gap-3">
                 <div style="width: 100%; max-width: 150px">
-                    <img src="{{ asset('assets/images/home/icon4.png') }}" style="width: 60%;" alt="">
+                    <img src="{{asset('assets/images/home/icon4.png')}}" style="width: 60%;" alt="">
                 </div>
                 <div class="text-start">
                     <b class="highlight">QUALITY</b>
@@ -217,7 +217,7 @@
     <div class="bottles-img position-relative" style="overflow: hidden; height: 500px;">
         
         <!-- Gambar Background -->
-        <img src="{{ asset('assets/images/bottle.png') }}" alt="Bottles"
+        <img src="{{asset('assets/images/bottle.png')}}" alt="Bottles"
              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
 
         <!-- Teks Overlay -->

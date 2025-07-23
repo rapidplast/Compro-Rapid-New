@@ -2,57 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Team</title>
-    <link rel="stylesheet" href="{{asset('assets/css/carrier.css')}}">
-    <link rel="icon" href="{{asset('assets/images/logo.png')}}" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Our Team</title>
+  <link rel="stylesheet" href="{{ asset('assets/css/carrier.css') }}" />
+  <link rel="icon" href="{{ asset('assets/images/logo.png') }}" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
 </head>
 
-<body>
+<body class="career-page">
+  @include('layouts.navbar')
 
-    <div class="header" style="background-color: red; color: white; padding: 20px; text-align: center;">
-        <h1>Join <span style="color: rgb(254, 255, 254);">Our Team</span></h1>
+  <header class="career-header">
+    <div class="header-overlay">
+      <h1>JOIN <b>OUR TEAM</b></h1>
+      <p>Be part of a dynamic and innovative team driving the future of packaging.</p>
     </div>
+  </header>
 
-    <div style="padding-top: 60px; padding-left: 30px; font-size: 30px;">
-        <a href="{{ url('/about_us') }}">
-            <i class="icon fa-solid fa-angle-left" style="color: purple;"></i>
-        </a>
-    </div>
-
-    <div class="container">
-        @if ($carriers->isEmpty())
-            <div style="
-                margin: 50px auto;
-                padding: 40px;
-                text-align: center;
-                background-color: white;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                border-radius: 12px;
-                font-size: 20px;
-                max-width: 600px;
-                color: #555;">
-                There are no job vacancies available at the moment.<br>
-                Please stay tuned for upcoming opportunities.
-            </div>
-        @else
-            @foreach ($carriers as $carrier)
-                <div class="card">
-                    <img src="{{asset('storage/foto/' . $carrier->foto)}}" alt="Foto Jobdesk">
-                    <div class="card-content">
-                        <h2>{{ $carrier->penempatan }}: 
-                            <span style="color: red;">{{ $carrier->jenis }}</span>
-                        </h2>
-                        <p>{{ $carrier->jobdesk }}</p>
-                        <a href="{{ url('carrier/see_more/' . $carrier->id) }}" class="btn">See More</a>
-                    </div>
-                </div>
-            @endforeach
-        @endif
-    </div>
-
+  <main class="career-container">
+    @if ($carriers->isEmpty())
+      <div class="no-vacancy">
+        There are no job vacancies available at the moment.<br />
+        Please stay tuned for upcoming opportunities.
+      </div>
+    @else
+      @foreach ($carriers as $carrier)
+        <div class="career-card">
+          <img src="{{ asset('storage/foto/' . $carrier->foto) }}" alt="Job Image" />
+          <div class="card-details">
+            <h2>{{ $carrier->penempatan }}: <span>{{ $carrier->jenis }}</span></h2>
+            <p>{{ $carrier->jobdesk }}</p>
+            <a href="{{ url('carrier/see_more/' . $carrier->id) }}" class="see-more-btn">See More</a>
+          </div>
+        </div>
+      @endforeach
+    @endif
+  </main>
 </body>
 
 </html>

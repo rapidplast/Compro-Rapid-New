@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', serif;
 }
 
 .footer {

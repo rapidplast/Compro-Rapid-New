@@ -208,7 +208,7 @@
     <div class=" fade-in-up">
         <div class="" style="height: 115px; width: 345px; border-radius: 10px;">
             <div class="" style="height: 115px; width: 345px; background-color: red; border-radius: 10px; ">
-                <p style="padding-top: 10px; color: white">plant 6 In-plant starting 1 januari 2024, product handle toothbrush</p>
+                <p style="padding-top: 10px; color: white">Plant 6 In-plant starting 1 januari 2024, product handle toothbrush</p>
             </div>
         </div>
     </div>
@@ -320,7 +320,7 @@
                 <div class="align-self-center fade-in-up" style="margin-top: 720px; margin-left: -665px;">
                     <div class="card-three-4" style="height: 115px; width: 345px; border-radius: 10px; margin-top: 90px; margin-right: -705px;">
                         <div class="card-body-three-4" style="height: 115px; width: 345px; border-radius: 10px; ">
-                            <p style="padding-top: 10px; color: black; text-align: start;">plant 6 In-plant starting 1 januari 2024, product handle toothbrush</p>
+                            <p style="padding-top: 10px; color: black; text-align: start;"> Plant 6 In-plant starting 1 januari 2024, product handle toothbrush</p>
                         </div>
                     </div>
                 </div>

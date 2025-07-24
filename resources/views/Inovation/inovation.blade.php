@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <section class="inovasi" style="background-image: url('{{asset('assets/images/home/culture2.jpeg') }}'); background-size: cover; background-position: center;">
+    <section class="inovasi" style="background-image: url('{{asset('assets/images/home/culture2.jpeg') }}'); background-size: cover; background-position: center;margin-top: 100px">
         <br>
         <div class="container">
             <div class="inovasi">

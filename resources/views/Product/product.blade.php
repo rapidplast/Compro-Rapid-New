@@ -27,7 +27,7 @@
 </div>
 
 <section id="on-top">
-    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
+    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 100px;">
         <div class="text-img">
             <h3><b><span style="color: white;">ONE - STOP RIGID </span></b></h3>
             <h3><b><span style="color: red;">PACKAGING SOLUTION</span></b></h3>

@@ -3,6 +3,19 @@
 @else
     @include('layouts.navbar')
 @endif
+
+<!-- Product Style navbar kedua -->
+<nav class="product-nav">
+    <div class="product-nav-container">
+        <div class="product-nav-title">Product</div>
+        <div class="product-nav-links">
+            <a href="#knowledge" class="product-link">Knowledge Through Experience</a>
+            <a href="#product" class="product-link">Products & Service</a>
+            <a href="#board" class="product-link">Broad Selection</a>
+        </div>
+    </div>
+</nav>
+
 @section('title')
     Product
 @endsection
@@ -12,12 +25,6 @@
 <div id="preloader">
     <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
-
-<nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
-    <a href="#knowledge" class="a">Knowledge Through Experience</a>
-    <a href="#product" class="a">Products & Service</a>
-    <a href="#board" class="a">Broad Selection</a>
-</nav>
 
 <section id="on-top">
     <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">
@@ -45,7 +52,7 @@
                 <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
               </div>
               <div class="col des-1">
-                <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b>
+                <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b>
                 <p>We service customers in producing a wide range of plastic packaging applications for personal care, food and beverage, homecare, and pharmaceutical products.
                    Variety of product formats including bottles (blow and extruded blow), caps and closures, jars, tube, and toothbrush.
                 </p>
@@ -55,7 +62,7 @@
         <div class="container text-center p-5">
             <div class="row align-items-center">
               <div class="col des-2">
-                <b><h5><i>INDUSTRIAL <span style="color: red;">PACKAGING</span></i></h5></b>
+                <b><h5><i>INDUSTRIAL <span style="color: red;">PACKAGING</span></i></h5></b>
                 <p>Industrial packaging products for lubricants, chemicals, paints, and other liquid across wide range container sizes.
                     Safe and strong packaging catered to variety of product contents with long shelf life.
                 </p>
@@ -71,8 +78,8 @@
                 <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
               </div>
               <div class="col des-3">
-                <b><h5><i>PRODUCT <span style="color: red;">DESIGN</span></i></h5></b>
-                <p>Our creative designers develop the ideal design concept for the respective market. From the very first sketches, the focus is on technical feasibility in addition to the shape, colour and feel. has implemented thousands of designs over the course of six decades. From conceptual designs to traditional technical designs, we cover the entire range of services.
+                <b><h5><i>PRODUCT <span style="color: red;">DESIGN</span></i></h5></b>
+                <p>Our creative designers develop the ideal design concept for the respective market. From the very first sketches, the focus is on technical feasibility in addition to the shape, colour and feel. has implemented thousands of designs over the course of six decades. From conceptual designs to traditional technical designs, we cover the entire range of services.
                 </p>
               </div>
             </div>
@@ -210,12 +217,7 @@
     <div class="bottles">
         <b ><h4 class="m-0">A BROAD SELECTION OF <span style="color: red">STANDARDIZED PRODUCTS</span></h4></b>
     </div>
-<section id="board" style="background-color: #EAE2E6;">
-<section id="board" style="background-color: #EAE2E6;">
-<section id="board" style="background-color: #EAE2E6;">
-<section id="board" style="background-color: #EAE2E6;">
     <div class="bottles-img position-relative" style="overflow: hidden; height: 500px;">
-        
         <!-- Gambar Background -->
         <img src="{{asset('assets/images/bottle.png')}}" alt="Bottles"
              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
@@ -225,17 +227,7 @@
             <h1 style="font-weight: bold; font-size: 48px; margin: 0;">BOTTLES</h1>
             <p style="font-weight: bold; font-size: 20px; margin: 5px 0 0;">HDPE, LDPE, PP, 6-layer Coex, PET, PET-G</p>
         </div>
-        
     </div>
-</section>
-
-</section>
-
-</section>
-
-</section>
-
-
 </section>
 
 <section id="" style="background-color: #EAE2E6;">
@@ -248,92 +240,6 @@
         <button type="button" class="btn btn-secondary" style="margin-top: 60px; width: 540px;">Product Catalogue Rapid Plast</button>
     </div>
 </section>
-
-{{-- <div class="top-text">
-    <p class="headline">ONE - STOP RIGID <span class="highlight"> PACKING SOLUTION</span></p>
-    <p style="font-weight: 200; font-size: 20px;">Extensive experience in rigid plastic manufacturing processes across wide range of products and industry applications.</p>
-</div>
-
-<div class="container d-flex flex-md-row flex-column align-items-center justify-content-center gap-5">
-    <div 
-    class="box mt-3" 
-    style="background-color: red; position: absolute; right: 0; top: 45%; transform: translateY(-5%); height: 280px; width: 50px;">
-</div>
-    <div class="fade-in-up align-self-md-start" style="margin-bottom: 70px">
-        <div 
-        class="box mt-3" 
-        style="background-color: red; position: absolute; left: -100px; top: 180%; transform: translateY(-5%); height: 280px; width: 50px;">
-    </div>
-        <hr style="width: 80px; margin-left: 45px; height: 5px; color: red;">
-        <p><span class="highlight fade-in-up">RAPID PLAST</span> PRODUCTS</p>
-        <ul id="productList">
-          <li class="fade-in-up active" data-product="cosmetics" style="cursor: pointer;">Personal Care</li>
-          <li class="fade-in-up active" data-product="cosmetics" style="cursor: pointer;">Cosmetic</li>
-          <li class="fade-in-up" data-product="pharmacy" style="cursor: pointer;">Pharmacy</li>
-          <li class="fade-in-up" data-product="pharmacy" style="cursor: pointer;">Medical</li>
-          <li class="fade-in-up dropdown" style="cursor: pointer;">
-              Food & Beverage
-              <div class="dropdown-items" style="display: none;">
-                
-                  <ul>
-                      <li class="dropdown-item" data-product="dairly">Dairy</li>
-                      <li class="dropdown-item" data-product="cooking">Edible Oil</li>
-                      <li class="dropdown-item" data-product="bottled">Cap Gallon Aqua</li>
-                  </ul>
-              </div>
-          </li>
-      </ul>
-    </div>
-    
-    <div class="d-flex flex-wrap gap-5 align-items-center justify-content-center" style="max-width: 70rem;">
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-1">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-2">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-3">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-4">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-5">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-6">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-7">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-8">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-        <div class="card fade-in-up" style="width: 15rem; border: none;">
-            <div class="card-header" style="background-color: white; border: none;" id="card-9">
-                <!-- Image will be inserted here -->
-            </div>
-        </div>
-    </div>
-
-</div> --}}
 
 @include('layouts.footer')
 
@@ -382,149 +288,40 @@
   });
 </script>
 
-{{-- <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(() => {
-        document.getElementById('preloader').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-    }, 300);
-
-    const productList = document.getElementById('productList');
-    const cardHeaders = document.querySelectorAll('.card-header');
-
-    const images = {
-        cosmetics: [
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-        ],
-        medical: [
-            'path/to/medical1.jpg',
-            'path/to/medical2.jpg',
-            'path/to/medical3.jpg',
-            'path/to/medical4.jpg',
-            'path/to/medical5.jpg',
-            'path/to/medical6.jpg',
-            'path/to/medical7.jpg',
-            'path/to/medical8.jpg',
-            'path/to/medical9.jpg',
-        ],
-        pharmacy: [
-            'path/to/pharmacy1.jpg',
-            'path/to/pharmacy2.jpg',
-            'path/to/pharmacy3.jpg',
-            'path/to/pharmacy4.jpg',
-            'path/to/pharmacy5.jpg',
-            'path/to/pharmacy6.jpg',
-            'path/to/pharmacy7.jpg',
-            'path/to/pharmacy8.jpg',
-            'path/to/pharmacy9.jpg',
-        ],
-        dairly: [
-            'path/to/food1.jpg',
-            'path/to/food2.jpg',
-            'path/to/food3.jpg',
-            'path/to/food4.jpg',
-            'path/to/food5.jpg',
-            'path/to/food6.jpg',
-            'path/to/food7.jpg',
-            'path/to/food8.jpg',
-            'path/to/food9.jpg',
-        ],
-        cooking: [
-            'path/to/food1.jpg',
-            'path/to/food2.jpg',
-            'path/to/food3.jpg',
-            'path/to/food4.jpg',
-            'path/to/food5.jpg',
-            'path/to/food6.jpg',
-            'path/to/food7.jpg',
-            'path/to/food8.jpg',
-            'path/to/food9.jpg',
-        ],
-        bottled: [
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-            'assets/images/logo.png',
-        ],
-    };
-
-    function updateCardHeaders(productType) {
-        const productImages = images[productType];
-
-        cardHeaders.forEach((cardHeader, index) => {
-            if (productImages[index]) {
-                cardHeader.innerHTML = `<img src="${productImages[index]}" alt="${productType}" style="width: 100%; height: 100%; object-fit: cover;">`;
-            } else {
-                cardHeader.innerHTML = '';
+<script>
+    // Script untuk navbar Product style dengan penyesuaian otomatis
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainNavbar = document.querySelector('.navbar'); 
+        const secondaryNavbar = document.querySelector('.product-nav');
+        
+        // Fungsi untuk mengatur posisi navbar kedua
+        function adjustSecondaryNavbar() {
+            if (mainNavbar && secondaryNavbar) {
+                const mainNavbarHeight = mainNavbar.offsetHeight;
+                secondaryNavbar.style.top = mainNavbarHeight + 'px';
             }
-        });
-    }
-
-    productList.addEventListener('click', function(e) {
-        if (e.target.tagName === 'LI') {
-            document.querySelectorAll('#productList li').forEach(li => li.classList.remove('active'));
-            e.target.classList.add('active');
-            const productType = e.target.getAttribute('data-product');
-            updateCardHeaders(productType);
         }
-    });
-    const defaultProduct = document.querySelector('li[data-product="cosmetics"]');
-    defaultProduct.click();
-});
-
-</script> --}}
-
-{{-- <script>
-  document.querySelectorAll('#productList li').forEach(item => {
-    item.addEventListener('click', function() {
-        document.querySelectorAll('#productList li').forEach(li => li.classList.remove('active'));
-        this.classList.add('active');
-    });
-});
-</script> --}}
-
-{{-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const foodDrinkItem = document.querySelector('.dropdown');
-        const dropdownItems = document.querySelector('.dropdown-items');
-
-        foodDrinkItem.addEventListener('click', function() {
-            console.log("Food & Drink diklik");
-            dropdownItems.style.display = dropdownItems.style.display === 'none' ? 'block' : 'none';
-            console.log("Tampilan item dropdown:", dropdownItems.style.display);
-        });
-
-        dropdownItems.addEventListener('click', function(e) {
-            if (e.target.classList.contains('dropdown-item')) {
-                console.log("Item dropdown diklik:", e.target.textContent);
-                const productType = e.target.getAttribute('data-product');
-                document.querySelectorAll('#productList li').forEach(li => li.classList.remove('active'));
-                e.target.classList.add('active');
-                updateCardHeaders(productType);
-                dropdownItems.style.display = 'none';
+        
+        // Panggil saat load dan resize
+        adjustSecondaryNavbar();
+        window.addEventListener('resize', adjustSecondaryNavbar);
+        
+        // Script scroll yang sudah diperbaiki
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const mainNavbarHeight = mainNavbar ? mainNavbar.offsetHeight : 90;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scroll down -> hide navbar
+                secondaryNavbar.style.top = "-70px";
+            } else {
+                // Scroll up -> show navbar
+                secondaryNavbar.style.top = mainNavbarHeight + "px";
             }
-        });
-
-        document.addEventListener('click', function(event) {
-            if (!foodDrinkItem.contains(event.target) && !dropdownItems.contains(event.target)) {
-                dropdownItems.style.display = 'none';
-            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     });
-</script> --}}
-
-
-
+</script>

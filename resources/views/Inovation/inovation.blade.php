@@ -11,36 +11,45 @@
     @else
         @include('layouts.navbar')
     @endif
+    
+    <!-- ALPLA Style navbar kedua -->
+    <nav class="alpla-nav">
+        <div class="alpla-nav-container">
+            <div class="alpla-nav-title">Innovation</div>
+            <div class="alpla-nav-links">
+                <a href="#id" class="alpla-link">Turning Ideas Into Solution</a>
+                <a href="#ino" class="alpla-link">Innovative Solution</a>
+                <a href="#collab" class="alpla-link">Collaboration</a>
+                <a href="#product" class="alpla-link">Distinctive</a>
+            </div>
+        </div>
+    </nav>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('assets/css/inovation.css')}}">
+    
     <div id="preloader"> 
         <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
     </div>
 </head>
-
-<!-- <nav class="dua" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
-    <a href="#id" class="a">Turning Ideas Into Solution</a>
-    <a href="#ino" class="a">Innovative Solution</a>
-    <a href="#collab" class="a">Collaboration</a>
-    <a href="#product" class="a">Distinctive</a>
-</nav>-->
 
 <body>
     <section class="inovasi" style="background-image: url('{{asset('assets/images/home/culture2.jpeg') }}'); background-size: cover; background-position: center;">
         <br>
         <div class="container">
             <div class="inovasi">
-    <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: -90px;">ENHANCING BRANDS THROUGH</p> 
-    <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">ECO-FREINDLY PACKAGING</p> 
-    <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">August 1, 1992, established a manufacturer of plastic packaging </p>
-    <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">toothbrushes, and plastic tubes, which is a subsidiary </p>
-    <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);"> of Dynapack Asia, serving leading brands across Asia</p>
+                <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: -90px;">ENHANCING BRANDS THROUGH</p> 
+                <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">ECO-FREINDLY PACKAGING</p> 
+                <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">August 1, 1992, established a manufacturer of plastic packaging </p>
+                <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">toothbrushes, and plastic tubes, which is a subsidiary </p>
+                <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);"> of Dynapack Asia, serving leading brands across Asia</p>
+            </div>
         </div>
     </section>
 
-    <section id="id" class="ideas"style="background-color: #EAE2E6">
+    <section id="id" class="ideas" style="background-color: #EAE2E6">
         <b><h4>TURNING IDEAS <span class="highlight">INTO SOLUTIONS</span></h4></b>
         <div class="sub-ideas">
             <p>We believe that the future belongs to those who can turn ideas into solutions. With our 4 decades of experience, Impack has proven its existence through unique and innovative solutions that meet consumer needs.Through Rapid Plast, we specialize in plastic and bottle production innovations that combine cutting-edge technology, sustainability, and efficiency. 
@@ -51,7 +60,7 @@
     </section>
 
     <section id="ino" class="inovasi-2" style="background-color: #EAE2E6">
-        <p class="text-inovasi-2" style=" font-weight: normal;color: black; text-align: center;">INNOVATIVE SOLUTIONS ALIGN WITH <span class="highlight">DNPA SUSTAINABILITY GOALS,</span>  AS FOLLOWS</p>
+        <p class="text-inovasi-2" style=" font-weight: normal;color: black; text-align: center;">INNOVATIVE SOLUTIONS ALIGN WITH <span class="highlight">DNPA SUSTAINABILITY GOALS,</span>  AS FOLLOWS</p>
         <div class="container text-center">
             <div class="row align-items-start">
               <div class="col">
@@ -188,125 +197,7 @@
         </div>
     </section>
 
-    {{-- <section class="catalog">
-        <div class="container">
-            <div class="produk-c">
-                <p>PRODUCT <span class="highlight">CATALOGUE</span></p>
-            </div>
-            <div class="produk">
-                <div class="container text-center">
-                    <div class="row align-items-start">
-                        <div class="col">
-                            <a href="#" data-target="card-product-persoalcare">Personal care</a>
-                        </div>
-                        <div class="col">
-                            <a href="#" data-target="card-product-pharmacy">Pharmacy</a>
-                        </div>
-                        <div class="col">
-                            <a href="#" data-target="card-product-food">Food dan Beverage</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Personal Care -->
-        <div id="card-product-persoalcare" class="product-card">
-            <div class="container text-center">
-                <h1 class="text-center" style="color: black">Personal Care</h1>
-                <div class="row">
-                    @foreach ($inovations['Personal Care'] as $inov)
-                        <div class="col-12 col-sm-6 col-md-4 mb-4">
-                            <div class="card position-relative" style="border-radius: 10px;">
-                                <form action="{{route('hapus.inovation', $inov->id)}}" method="POST"
-                                    class="position-absolute" style="top: 5px; right: 5px;">
-                                    @csrf
-                                    <button type="submit" class="btn-close" aria-label="Close"></button>
-                                </form>
-                                <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
-                                    alt="{{$inov->judul}}" style="width: 100%; border-radius: 10px;">
-                                <div class="card-description">{{ $inov->keterangan }}</div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-        <!-- Pharmacy -->
-        <div id="card-product-pharmacy" class="product-card">
-            <div class="container text-center">
-                <h1 class="text-center" style="color: black">Pharmacy</h1>
-                <div class="row">
-                    @foreach ($inovations['Pharmacy'] as $inov)
-                        <div class="col-12 col-sm-6 col-md-4 mb-4">
-                            <div class="card" style="border-radius: 10px;">
-                                <form action="{{route('hapus.inovation', $inov->id)}}" method="POST"
-                                    class="position-absolute" style="top: 5px; right: 5px;">
-                                    @csrf
-                                    <button type="submit" class="btn-close" aria-label="Close"></button>
-                                </form>
-                                <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
-                                    alt="{{$inov->judul}}" style="border-radius: 10px;">
-                                <div class="card-description">{{ $inov->keterangan }}</div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-        <!-- Food -->
-        {{-- <div id="card-product-food" class="product-card">
-            <div class="container text-center">
-                <h1 class="text-center" style="color: black">Food dan Beverage</h1>
-                <div class="row">
-                    @foreach ($inovations['Food dan Beverage'] as $inov)
-                        <div class="col-12 col-sm-6 col-md-4 mb-4">
-                            <div class="card" style="border-radius: 10px;">
-                                <form action="{{ route('hapus.inovation', $inov->id) }}" method="POST"
-                                    class="position-absolute" style="top: 5px; right: 5px;">
-                                    @csrf
-                                    <button type="submit" class="btn-close" aria-label="Close"></button>
-                                </form>
-                                <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
-                                    alt="{{$inov->judul}}" style="border-radius: 10px;">
-                                <div class="card-description">{{ $inov->keterangan }}</div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div> --}}
-        
-        {{-- <div id="card-product-food" class="product-card">
-            <div class="container text-center">
-                <h1 class="text-center" style="color: black">Food dan Beverage</h1>
-                <div class="row">
-                    @foreach ($inovations['Food dan Beverage'] as $inov)
-                        <div class="col-12 col-sm-6 col-md-4 mb-4">
-                            <div class="card" style="border-radius: 10px;">
-                                <form action="{{route('hapus.inovation', $inov->id)}}" method="POST"
-                                    class="position-absolute" style="top: 5px; right: 5px;">
-                                    @csrf
-                                    <button type="submit" class="btn-close" aria-label="Close"></button>
-                                </form>
-                                <div class="card-title text-center">{{ $inov->judul }}</div>
-                                <img class="card-img-top" src="{{asset('storage/foto/' . $inov->foto)}}"
-                                    alt="{{$inov->judul}}" style="border-radius: 10px;">
-                                <div class="card-description">{{ $inov->keterangan }}</div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section> --}}
     @include('layouts.footer')
-
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -348,26 +239,51 @@
 
     <script>
         function toggleDropdown(element) {
-            const dropdown = element.parentElement.nextElementSibling;
-
-            if (dropdown.style.display === "none" || dropdown.style.display === "") {
-                dropdown.style.display = "block";
-            } else {
+            // Tutup semua dropdown lain terlebih dahulu
+            const allDropdowns = document.querySelectorAll('.dropdown-content');
+            const allIcons = document.querySelectorAll('.accordion-item i');
+            
+            const currentDropdown = element.parentElement.nextElementSibling;
+            const isCurrentlyOpen = currentDropdown.classList.contains('open');
+            
+            // Tutup semua dropdown dan reset icon
+            allDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('open');
                 dropdown.style.display = "none";
+            });
+            
+            allIcons.forEach(icon => {
+                icon.classList.remove('bi-dash-circle-fill');
+                icon.classList.add('bi-plus-circle-fill');
+            });
+            
+            // Jika dropdown yang diklik tidak sedang terbuka, buka dropdown tersebut
+            if (!isCurrentlyOpen) {
+                currentDropdown.classList.add('open');
+                currentDropdown.style.display = "block";
+                element.classList.remove('bi-plus-circle-fill');
+                element.classList.add('bi-dash-circle-fill');
             }
         }
-    </script>
-
-    <script>
-        function showDropdown(element) {
-            const dropdown = element.parentElement.nextElementSibling;
-            dropdown.style.display = "block";
-        }
-
-        function hideDropdown(element) {
-            const dropdown = element.parentElement.nextElementSibling;
-            dropdown.style.display = "none";
-        }
+        
+        // Tutup dropdown jika klik di luar area
+        document.addEventListener('click', function(event) {
+            const isAccordionClick = event.target.closest('.accordion-item');
+            if (!isAccordionClick) {
+                const allDropdowns = document.querySelectorAll('.dropdown-content');
+                const allIcons = document.querySelectorAll('.accordion-item i');
+                
+                allDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('open');
+                    dropdown.style.display = "none";
+                });
+                
+                allIcons.forEach(icon => {
+                    icon.classList.remove('bi-dash-circle-fill');
+                    icon.classList.add('bi-plus-circle-fill');
+                });
+            }
+        });
     </script>
 
     <script>
@@ -392,6 +308,44 @@
 
             window.addEventListener('scroll', checkPosition);
             checkPosition();
+        });
+    </script>
+
+    <script>
+        // Script untuk navbar ALPLA style dengan penyesuaian otomatis
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainNavbar = document.querySelector('.navbar'); 
+            const secondaryNavbar = document.querySelector('.alpla-nav');
+            
+            // Fungsi untuk mengatur posisi navbar kedua
+            function adjustSecondaryNavbar() {
+                if (mainNavbar && secondaryNavbar) {
+                    const mainNavbarHeight = mainNavbar.offsetHeight;
+                    secondaryNavbar.style.top = mainNavbarHeight + 'px';
+                }
+            }
+            
+            // Panggil saat load dan resize
+            adjustSecondaryNavbar();
+            window.addEventListener('resize', adjustSecondaryNavbar);
+            
+            // Script scroll yang sudah diperbaiki
+            let lastScrollTop = 0;
+            
+            window.addEventListener('scroll', function () {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const mainNavbarHeight = mainNavbar ? mainNavbar.offsetHeight : 90;
+                
+                if (scrollTop > lastScrollTop) {
+                    // Scroll down -> hide navbar
+                    secondaryNavbar.style.top = "-70px";
+                } else {
+                    // Scroll up -> show navbar
+                    secondaryNavbar.style.top = mainNavbarHeight + "px";
+                }
+                
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
         });
     </script>
 

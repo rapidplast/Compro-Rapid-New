@@ -13,11 +13,11 @@
     <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
 
-<!--<nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
+<nav class="nav2" style="background-color: rgba(128, 128, 128, 0.5); padding-top: 140px;">
     <a href="#knowledge" class="a">Knowledge Through Experience</a>
     <a href="#product" class="a">Products & Service</a>
     <a href="#board" class="a">Broad Selection</a>
-</nav>-->
+</nav>
 
 <section id="on-top">
     <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 80px;">

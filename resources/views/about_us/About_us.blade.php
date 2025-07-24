@@ -13,19 +13,23 @@
 <link rel="stylesheet" href="{{asset('assets/css/aboutus.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-
 <div id="preloader">
     <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
 </div>
 
-<!--<nav class="nav2" style="background-color: rgba(235, 225, 225, 0.573); padding-top: 140px;justify-content: flex-end;">
-    <a href="#companyGlobal" class="a">Company Global</a>
-    <a href="#vimi" class="a">Visi & Misi</a>
-    <a href="#motto" class="a">Motto</a>
-    <a href="#nom" class="a">Number Of Employes</a>
-    <a href="#bo" class="a">Branch Office</a>
-</nav>-->
+<!-- Company Style navbar kedua - mirip ALPLA -->
+<nav class="company-nav">
+    <div class="company-nav-container">
+        <div class="company-nav-title">Company</div>
+        <div class="company-nav-links">
+            <a href="#companyGlobal" class="company-link">Company Global</a>
+            <a href="#vimi" class="company-link">Visi & Misi</a>
+            <a href="#motto" class="company-link">Motto</a>
+            <a href="#nom" class="company-link">Number Of Employees</a>
+            <a href="#bo" class="company-link">Branch Office</a>
+        </div>
+    </div>
+</nav>
 
 <div class="top-text" style="background-image: url('{{asset('assets/images/inovation/rapid4.jpeg')}}'); background-size: cover; background-position: center; margin-top: 80px;">
     <div class="text-2">
@@ -329,12 +333,6 @@
     </div>
 </div>
 </div>
-      
-      
-
-
-
-
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -381,6 +379,42 @@
     });
 </script>
 
-
+<script>
+    // Script untuk navbar Company style dengan penyesuaian otomatis
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainNavbar = document.querySelector('.navbar'); 
+        const companyNavbar = document.querySelector('.company-nav');
+        
+        // Fungsi untuk mengatur posisi navbar kedua
+        function adjustCompanyNavbar() {
+            if (mainNavbar && companyNavbar) {
+                const mainNavbarHeight = mainNavbar.offsetHeight;
+                companyNavbar.style.top = mainNavbarHeight + 'px';
+            }
+        }
+        
+        // Panggil saat load dan resize
+        adjustCompanyNavbar();
+        window.addEventListener('resize', adjustCompanyNavbar);
+        
+        // Script scroll untuk hide/show navbar
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const mainNavbarHeight = mainNavbar ? mainNavbar.offsetHeight : 90;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scroll down -> hide navbar
+                companyNavbar.style.top = "-70px";
+            } else {
+                // Scroll up -> show navbar
+                companyNavbar.style.top = mainNavbarHeight + "px";
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    });
+</script>
 
 @include('layouts.footer')

@@ -7,11 +7,10 @@ body::-webkit-scrollbar {
     text-align: start;
     font-weight: normal;
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 220px; /* Disesuaikan untuk navbar company */
     padding-left: 80px;
     padding-bottom: 70px;
     color: white;
-    padding-top: 150px;
     height: 500px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -135,17 +134,14 @@ body::-webkit-scrollbar {
     position: relative;
 }
 
-
-
 .circle:hover .card-text {
     display: block;
-   
 }
 
 .card-three{
     margin-left: 80px;
-
 }
+
 .card-body .card-text{
     font-size: 40px;
     color: red;
@@ -157,7 +153,6 @@ body::-webkit-scrollbar {
 
 .card-three-2{
     margin-left: 80px;
-
 }
 
 .card-body-three-2{
@@ -167,7 +162,6 @@ body::-webkit-scrollbar {
 
 .card-three-3{
     margin-left: 50px;
-
 }
 
 .card-body-three-3{
@@ -176,7 +170,6 @@ body::-webkit-scrollbar {
 
 .card-three-4{
     margin-left: 210px;
-
 }
 
 .card-body-three-4{
@@ -185,7 +178,6 @@ body::-webkit-scrollbar {
 
 .card-three-5{
     margin-left: -60px;
-
 }
 
 .card-body-three-5{
@@ -194,7 +186,6 @@ body::-webkit-scrollbar {
 
 .card-three-6{
     margin-left: 320px;
-
 }
 
 .card-body-three-6{
@@ -219,7 +210,6 @@ body::-webkit-scrollbar {
 
 .highlight{
     color: red;
-    
 }
 
 .high{
@@ -345,40 +335,146 @@ body::-webkit-scrollbar {
 .card-body {
     padding: 0px;
     height: 100%;
-  
 }
 
-
-.nav2{
+/* COMPANY STYLE NAVBAR untuk About Us - Mirip ALPLA tapi untuk Company */
+.company-nav {
     position: fixed;
-    display: flex;
-    top: 0;
-    z-index: 1000;
+    top: 90px; /* Akan disesuaikan otomatis dengan JavaScript */
+    left: 0;
     width: 100%;
+    background: linear-gradient(135deg, #c41e3a 0%, #8B0000 100%); /* Gradient merah seperti ALPLA */
+    z-index: 999;
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
     align-items: center;
-    height: 170px;
-    padding-left: 650px;
+    padding: 0 20px;
+    height: 70px;
 }
 
-a{
-    padding-bottom: 50px;
+.company-nav-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-right: 60px;
+    min-width: 200px;
 }
 
-.a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    font-size: 15px;
-    margin: 10px;
+.company-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex: 1;
+    justify-content: flex-end;
 }
 
-.a:hover{
+.company-link {
     color: white;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
 
+.company-link:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid white;
+}
 
+.company-link:focus,
+.company-link:active {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-bottom: 3px solid white;
+}
 
+/* Responsive untuk tablet */
+@media (max-width: 992px) {
+    .company-nav-container {
+        padding: 0 15px;
+    }
+    
+    .company-nav-title {
+        font-size: 20px;
+        margin-right: 30px;
+        min-width: 150px;
+    }
+    
+    .company-link {
+        font-size: 14px;
+        padding: 25px 15px;
+    }
+}
 
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .company-nav {
+        top: 70px;
+    }
+    
+    .company-nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        align-items: flex-start;
+    }
+    
+    .company-nav-title {
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 18px;
+        min-width: auto;
+    }
+    
+    .company-nav-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        justify-content: flex-start;
+    }
+    
+    .company-link {
+        width: 100%;
+        padding: 15px 0;
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-left: 3px solid transparent;
+    }
+    
+    .company-link:hover,
+    .company-link:focus,
+    .company-link:active {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-left: 3px solid white;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .company-link:last-child {
+        border-bottom: none;
+    }
+    
+    .top-text {
+        padding-top: 200px; /* Kurangi untuk mobile */
+    }
+}
 
-
+/* Smooth scrolling untuk anchor links */
+html {
+    scroll-behavior: smooth;
+}

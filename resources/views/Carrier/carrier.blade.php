@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +10,10 @@
 </head>
 
 <body class="career-page">
+  {{-- NAVBAR --}}
   @include('layouts.navbar')
 
+  {{-- HEADER SECTION --}}
   <header class="career-header">
     <div class="header-overlay">
       <h1>JOIN <b>OUR TEAM</b></h1>
@@ -20,6 +21,7 @@
     </div>
   </header>
 
+  {{-- CONTENT SECTION --}}
   <main class="career-container">
     @if ($carriers->isEmpty())
       <div class="no-vacancy">
@@ -39,6 +41,9 @@
       @endforeach
     @endif
   </main>
-</body>
 
+  {{-- FOOTER --}}
+  @include('layouts.footer')
+
+</body>
 </html>

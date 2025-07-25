@@ -14,12 +14,12 @@
   @include('layouts.navbar')
 
   {{-- HEADER SECTION --}}
-  <header class="career-header">
-    <div class="header-overlay">
-      <h1>JOIN <b>OUR TEAM</b></h1>
-      <p>Be part of a dynamic and innovative team driving the future of packaging.</p>
-    </div>
-  </header>
+<header class="career-header" style="background-image: url('{{ asset('/assets/images/bg.jpeg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<div class="header-overlay">
+    <h1>JOIN <b>OUR TEAM</b></h1>
+    <p>Be part of a dynamic and innovative team driving the future of packaging.</p>
+  </div>
+</header>
 
   {{-- CONTENT SECTION --}}
   <main class="career-container">

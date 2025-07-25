@@ -4,7 +4,6 @@
     @include('layouts.navbar')
 @endif
 
-<!-- Product Style navbar kedua -->
 <nav class="product-nav">
     <div class="product-nav-container">
         <div class="product-nav-title">Product</div>
@@ -27,7 +26,7 @@
 </div>
 
 <section id="on-top">
-    <div class="one-stop" style="background-image: url('{{ asset('assets/images/about_us/company.jpeg') }}'); background-size: cover; background-position: center; margin-top: 100px;">
+    <div class="one-stop" style="background-image: url('{{ asset('assets/images/home/worker.jpg') }}'); background-size: cover; background-position: center 64%; margin-top: 100px;">
         <div class="text-img">
             <h3><b><span style="color: white;">ONE - STOP RIGID </span></b></h3>
             <h3><b><span style="color: red;">PACKAGING SOLUTION</span></b></h3>

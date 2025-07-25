@@ -17,7 +17,6 @@
     <img src="{{asset('/assets/images/logo.png')}}" alt="Loading...">
 </div>
 
-<!-- Company Style navbar kedua - mirip ALPLA -->
 <nav class="company-nav">
     <div class="company-nav-container">
         <div class="company-nav-title">Company</div>
@@ -31,7 +30,7 @@
     </div>
 </nav>
 
-<div class="top-text" style="background-image: url('{{asset('assets/images/inovation/rapid4.jpeg')}}'); background-size: cover; background-position: center; margin-top: 100px;">
+<!--<div class="top-text" style="background-image: url('{{asset('assets/images/inovation/rapid4.jpeg')}}'); background-size: cover; background-position: center; margin-top: 100px;">
     <div class="text-2">
     <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: 50px;">LEADERSHIP WITH</p> 
     <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">EXTENSIVE INDUSTRY EXPERIENCE</p> 
@@ -39,7 +38,19 @@
     <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">Professionals with extensive experience in the rigid</p>
     <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">Plastic packaging industry under the leadership of ...... and ......</p>
     </div>
-</div>
+</div>-->
+
+<section id="on-top">
+    <div class="one-stop" style="background-image: url('{{ asset('assets/images/address.jpg') }}'); background-size: cover; background-position: center 23%; margin-top: 100px;">
+        <div class="text-img">
+            <h3><b><span style="color: white;">LEADERSHIP WITH</span></b></h3>
+            <h3><b><span style="color: #ff0000ff;">EXTENSIVE INDUSTRY EXPERIENCE</span></b></h3>
+            <p class="first-text m-0"><span style="color: white;">Our Board of Directors and Management team consists of seasoned </p>
+            <p class="second-text p-0"><span style="color: white;">Professionals with extensive experience in the rigid Plastic packaging industry under the leadership of ...... and ......</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div id="companyGlobal" class="container-fluid text-center vimi" style="padding-top: 50px; background-color: #EAE2E6;">
     <div style="padding: 30px;" class="global"><h3><i><b>COMPANY <span class="highlight">GLOBAL PRESENCE</span></i></h3></b>

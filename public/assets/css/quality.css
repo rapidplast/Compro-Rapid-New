@@ -1,28 +1,7 @@
 body::-webkit-scrollbar {
     display: none;
 }
-.one-stop {
-    text-align: start;
-    font-weight: normal;
-    font-size: 30px;
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-bottom: 70px;
-    color: white;
-    padding-top: 150px;
-    height: 600px;
-}
-.text-img {
-    font-size: 18px;
-    padding-top: 90px;
-    color: black;
-}
 
-.text-img p{
-    font-size: 18px;
-    padding-top: 30px;
-    color: black;
-}
 .nav2{
     position: fixed;
     display: flex;
@@ -78,9 +57,6 @@ a{
     text-decoration: none;
 }
 
-.one-stop{
-    height: 550px;
-}
 
 .first-text{
     padding: 50px;
@@ -249,4 +225,29 @@ a{
 #preloader img {
     width: 100px; 
     height: auto;
+}
+
+
+.tes-img {
+    font-size: 18px;
+    padding-top: 90px;
+    color: black;
+}
+
+.tes-img p{
+    font-size: 18px;
+    padding-top: 30px;
+    color: black;
+}
+
+.one-stop {
+    text-align: start;
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-bottom: 70px;
+    color: white;
+    padding-top: 220px; 
+    height: 600px;
 }

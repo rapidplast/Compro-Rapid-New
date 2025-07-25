@@ -12,7 +12,6 @@
         @include('layouts.navbar')
     @endif
     
-    <!-- ALPLA Style navbar kedua -->
     <nav class="alpla-nav">
         <div class="alpla-nav-container">
             <div class="alpla-nav-title">Innovation</div>
@@ -36,18 +35,17 @@
 </head>
 
 <body>
-    <section class="inovasi" style="background-image: url('{{asset('assets/images/home/culture2.jpeg') }}'); background-size: cover; background-position: center;margin-top: 100px">
-        <br>
-        <div class="container">
-            <div class="inovasi">
-                <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: -90px;">ENHANCING BRANDS THROUGH</p> 
-                <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">ECO-FREINDLY PACKAGING</p> 
-                <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">August 1, 1992, established a manufacturer of plastic packaging </p>
-                <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">toothbrushes, and plastic tubes, which is a subsidiary </p>
-                <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);"> of Dynapack Asia, serving leading brands across Asia</p>
+    <section id="on-top">
+    <div class="one-stop" style="background-image: url('{{ asset('assets/images/home/culture2.jpeg') }}'); background-size: cover; background-position: center 75%; margin-top: 100px;">
+        <div class="text-img">
+            <h3><b><span style="color: white;">ENHANCING BRANDS THROUGH </span></b></h3>
+            <h3><b><span style="color: red;">ECO-FRIENDLY PACKAGING</span></b></h3>
+            <p class="first-text m-0"><span style="color: white;">August 1, 1992, established a manufacturer of plastic packaging </p>
+            <p class="second-text p-0"><span style="color: white;">toothbrushes, and plastic tubes, which is a subsidiary of Dynapack Asia, serving leading brands across Asia</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="id" class="ideas" style="background-color: #EAE2E6">
         <b><h4>TURNING IDEAS <span class="highlight">INTO SOLUTIONS</span></h4></b>
@@ -121,7 +119,7 @@
                 </div>
                 <div class="col p-0">
                     <img class="visi" style="width: 80dvw; max-width: 550px; height: 100%; border-radius: 30px;"
-                        src="{{asset('/assets/images/inovation/inovation1.jpeg')}}" alt="">
+                        src="{{asset('/assets/images/home/kerja.jpg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -130,7 +128,7 @@
             <div class="row align-items-start">
                 <div class="col p-0">
                     <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%; border-radius: 10px;"
-                        src="{{asset('/assets/images/inovation/inovation2.jpeg')}}" alt="">
+                        src="{{asset('/assets/images/home/paktua.jpg')}}" alt="">
                 </div>
             </div>
         </div>

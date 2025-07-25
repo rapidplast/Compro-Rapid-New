@@ -19,7 +19,6 @@ nav.navbar {
 }
 
 .career-header {
-  background: url('/assets/images/bg.jpeg') center/cover no-repeat;
   position: relative;
   height: 300px;
   display: flex;

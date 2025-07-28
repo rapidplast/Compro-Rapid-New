@@ -15,7 +15,7 @@ body {
 /* Logo Styling */
 .navbar-brand img,
 .logo img {
-  height: 60px;
+  height: 55px;
 }
 
 /* Nav Items */
@@ -29,7 +29,7 @@ body {
 .navbar-nav .nav-link {
   color: #000 !important;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   padding: 8px 4px;
   text-decoration: none;

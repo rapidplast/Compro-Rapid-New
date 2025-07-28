@@ -54,6 +54,7 @@
 
 <div id="companyGlobal" class="container-fluid text-center vimi" style="padding-top: 50px; background-color: #EAE2E6;">
     <div style="padding: 30px;" class="global"><h3><i><b>COMPANY <span class="highlight">GLOBAL PRESENCE</span></i></h3></b>
+    <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <div class="global-text" style="padding: 30px;">
             Operating regional locations across Indonesia ensures optimal benefits for our customers. Our 
             <br>production operations spread across different regions help shorten distribution routes, allowing us to
@@ -68,6 +69,7 @@
         </div>
         <div class="col visi-teks p-4">
             <i><h4 style="text-align: center;font-weight: bold; font-size: 28px; ">OUR <span class="highlight" style="font-weight: bold; font-size: 30px;">VISION</span></h4></i>
+            <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
             <p style="text-align: start; padding-left: 0px; font-size: 18px;">
                 To be a growing company in Indonesia that provides end-to-end solutions in Bottles, Tubes, Toothbrushes and Plastic packaging providers.
             </p>
@@ -77,6 +79,7 @@
     <div class="row align-items-start fade-in-up">
         <div class="col misi-teks order-2 order-md-1">
             <i><h4 style="text-align: center;font-weight: bold; font-size: 32px; ">OUR <span class="highlight" style="font-weight: bold; font-size: 32px;">MISION</span></h4></i>
+            <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
             <ul class="numbered-list">
                 <li>Committed to anticipating our customers' needs and responding creatively and competitively by providing total solutions, excellent service and competitive products.</li>
                 <li>Recruit and develop employee capabilities by providing training and rewarding employees based on innovation, achievement and professionalism.</li>
@@ -114,6 +117,7 @@
       <h5>NUMBER OF EMPLOYEES</h5>
       <h5 class="highlight">PT RAPID PLAST</h5>
     </i>
+    <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
 </section>
 
 <section class="number">
@@ -161,6 +165,7 @@
 
 <div id="bo" class="rapid" style="background-color: #EAE2E6; padding-bottom: 50px;">
     <i><h4 style="text-align: center; font-size: 32px;font-weight: bold; ">RAPID PLAST INDUSTRY <span class="highlight" style="font-weight: bold; font-size: 32px;">BRANCH OFFICE</span></h4></i>
+    <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
 <div class="d-flex d-lg-none justify-content-center flex-column align-items-center">
     <div style="margin-top: 50px">
         <i><b>PLANT <span class="highlight">1</span></b></i>

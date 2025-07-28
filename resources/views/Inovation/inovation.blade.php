@@ -49,6 +49,7 @@
 
     <section id="id" class="ideas" style="background-color: #EAE2E6">
         <b><h4>TURNING IDEAS <span class="highlight">INTO SOLUTIONS</span></h4></b>
+        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <div class="sub-ideas">
             <p>We believe that the future belongs to those who can turn ideas into solutions. With our 4 decades of experience, Impack has proven its existence through unique and innovative solutions that meet consumer needs.Through Rapid Plast, we specialize in plastic and bottle production innovations that combine cutting-edge technology, sustainability, and efficiency. 
                 Our commitment is to deliver products that not only meet but exceed market expectations, supporting industries with high-quality plastic packaging solutions. From design to manufacturing, we ensure every detail aligns with our mission to provide practical, durable, and eco-friendly solutions for a variety of applications.
@@ -59,6 +60,7 @@
 
     <section id="ino" class="inovasi-2" style="background-color: #EAE2E6">
         <p class="text-inovasi-2" style=" font-weight: normal;color: black; text-align: center;">INNOVATIVE SOLUTIONS ALIGN WITH <span class="highlight">DNPA SUSTAINABILITY GOALS,</span>  AS FOLLOWS</p>
+        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <div class="container text-center">
             <div class="row align-items-start">
               <div class="col">

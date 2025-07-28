@@ -69,7 +69,6 @@
     .highlight {
         font-size: 10px;
     }
-    /* Removed background-image URL from here - now handled in HTML */
     .ptext-product{
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -137,7 +136,6 @@
 }
 
 .bottles-img{
-    /* Removed background-image URL from here - now handled in HTML */
     padding-top: 40px;
     height: 600px;
     margin-top: 20px;
@@ -160,8 +158,8 @@
 
 .fade-in-up {
     opacity: 0;
-    transform: translateY(250px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fade-in-up.show {
@@ -219,15 +217,15 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    height: 70px;
+    height: 50px;
 }
 
 .product-nav-title {
     color: white;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    margin-right: 60px;
+    margin-left: 70px;
     min-width: 200px;
 }
 
@@ -242,7 +240,7 @@
 .product-link {
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     padding: 25px 20px;
     transition: all 0.3s ease;
@@ -250,7 +248,7 @@
     white-space: nowrap;
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 50px;
 }
 
 .product-link:hover {
@@ -364,7 +362,6 @@
     margin: 0 auto;
 }
 
-/* Button hover effect */
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -382,7 +379,6 @@ body {
 
 /* ===== CLIENT ANIMATIONS ===== */
 
-/* Client grid container animation */
 .clients-grid {
     opacity: 0;
     animation: fadeInGrid 1s ease-out forwards;
@@ -399,7 +395,7 @@ body {
     }
 }
 
-/* Individual client card animations */
+
 .client-card {
     opacity: 0;
     transform: translateY(50px) scale(0.9);
@@ -409,7 +405,6 @@ body {
     overflow: hidden;
 }
 
-/* Staggered animation for client cards */
 .client-card:nth-child(1) { animation: slideInClient 0.8s ease-out 0.1s forwards; }
 .client-card:nth-child(2) { animation: slideInClient 0.8s ease-out 0.2s forwards; }
 .client-card:nth-child(3) { animation: slideInClient 0.8s ease-out 0.3s forwards; }
@@ -447,7 +442,6 @@ body {
     }
 }
 
-/* Hover effects for client cards */
 .client-card:hover {
     transform: translateY(-8px) scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
@@ -468,7 +462,6 @@ body {
     left: 100%;
 }
 
-/* Image hover effects */
 .client-card img {
     transition: all 0.3s ease;
     filter: grayscale(20%);
@@ -479,7 +472,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Client section title animation */
 .client-title-animate {
     opacity: 0;
     transform: translateY(-30px);
@@ -497,7 +489,6 @@ body {
     }
 }
 
-/* Responsive client grid animations */
 @media (max-width: 1200px) {
     .clients-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -615,4 +606,5 @@ body {
 .clients-section-animate.show {
     opacity: 1;
     transform: translateY(0);
-}
+} 
+

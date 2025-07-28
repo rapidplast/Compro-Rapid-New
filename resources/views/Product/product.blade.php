@@ -240,13 +240,13 @@
             <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         </h4>
         <p style="color: black; font-size: 18px; margin-bottom: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
-            Click on a product in each of the three different sectors to get more information about the type and design of the special Dynapack packaging involved
+            Click on a product in each of the three different sectors to get more information about the type and design of the special Rapid Plast packaging involved
         </p>
         
         <div class="products-grid d-flex justify-content-center align-items-center gap-4 flex-wrap">
             <div class="product-item fade-slide-right" style="animation-delay: 0.1s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/vaseline.png')}}" alt="Vaseline Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/aqua.png')}}" alt="Aqua Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
@@ -258,25 +258,25 @@
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.3s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/sikatgigi.png')}}" alt="Toothbrush Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/viva.jpg')}}" alt="Viva Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.4s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/blender.png')}}" alt="Blender Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/jhonson.png')}}" alt="Jhonson Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.5s;">
-                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/oli.png')}}" alt="Castrol Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex;overflow: hidden; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/nestle.png')}}" alt="Nestle Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.6s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/olimobil.png')}}" alt="Mobil Oil Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/pocari.png')}}" alt="Mobil Oil Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -367,83 +367,165 @@
 @include('layouts.footer')
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-  const elements = document.querySelectorAll('.fade-in-up');
+document.addEventListener("DOMContentLoaded", function() {
+    // Preloader logic
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        const content = document.getElementById('content');
+        if (preloader) preloader.style.display = 'none';
+        if (content) content.style.display = 'block';
+    }, 300);
 
-  function checkPosition() {
-      elements.forEach(element => {
-          const position = element.getBoundingClientRect().top;
-          const windowHeight = window.innerHeight;
+    
+    const observerOptions = {
+        threshold: 0.1, 
+        rootMargin: '0px 0px -50px 0px' 
+    };
 
-          if (position < windowHeight - 50) {
-              element.classList.add('show');
-          }
-      });
-  }
-
-  window.addEventListener('scroll', checkPosition);
-  checkPosition();
-});
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      setTimeout(() => {
-          document.getElementById('preloader').style.display = 'none';
-          document.getElementById('content').style.display = 'block';
-      }, 300);
-
-      const elements = document.querySelectorAll('.fade-in-up');
-
-      function checkPosition() {
-          elements.forEach(element => {
-              const position = element.getBoundingClientRect().top;
-              const windowHeight = window.innerHeight;
-
-              if (position < windowHeight - 50) {
-                  element.classList.add('show');
-              }
-          });
-      }
-
-      window.addEventListener('scroll', checkPosition);
-      checkPosition();
-  });
-</script>
-
-
-<script>
-    // Script untuk navbar Product style dengan penyesuaian otomatis
-    document.addEventListener('DOMContentLoaded', function() {
-        const mainNavbar = document.querySelector('.navbar'); 
-        const secondaryNavbar = document.querySelector('.product-nav');
-        
-        // Fungsi untuk mengatur posisi navbar kedua
-        function adjustSecondaryNavbar() {
-            if (mainNavbar && secondaryNavbar) {
-                const mainNavbarHeight = mainNavbar.offsetHeight;
-                secondaryNavbar.style.top = mainNavbarHeight + 'px';
+    
+    const fadeUpObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+               
+                entry.target.classList.remove('show');
             }
+        });
+    }, observerOptions);
+
+    
+    const fadeSlideObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                
+                entry.target.classList.remove('animate');
+            }
+        });
+    }, observerOptions);
+
+    
+    const clientObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                entry.target.style.animation = 'none';
+                entry.target.offsetHeight; 
+                
+                
+                const childIndex = Array.from(entry.target.parentNode.children).indexOf(entry.target) + 1;
+                const animationDelay = (childIndex * 0.1) + 's';
+                
+                
+                entry.target.style.animation = `slideInClient 0.8s ease-out ${animationDelay} forwards`;
+                entry.target.classList.add('show');
+            } else {
+                
+                entry.target.classList.remove('show');
+                entry.target.style.animation = 'none';
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(50px) scale(0.9)';
+            }
+        });
+    }, observerOptions);
+
+    
+    const clientSectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                const clientCards = entry.target.querySelectorAll('.client-card');
+                clientCards.forEach((card, index) => {
+                    
+                    card.style.animation = 'none';
+                    card.offsetHeight; 
+                    
+                    const delay = (index * 0.1) + 0.1;
+                    setTimeout(() => {
+                        card.style.animation = `slideInClient 0.8s ease-out forwards`;
+                        card.classList.add('show');
+                    }, delay * 1000);
+                });
+            } else {
+                const clientCards = entry.target.querySelectorAll('.client-card');
+                clientCards.forEach(card => {
+                    card.classList.remove('show');
+                    card.style.animation = 'none';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(50px) scale(0.9)';
+                });
+            }
+        });
+    }, {
+        threshold: 0.2, 
+        rootMargin: '0px 0px -100px 0px'
+    });
+
+    const fadeUpElements = document.querySelectorAll('.fade-in-up');
+    const fadeSlideElements = document.querySelectorAll('.fade-slide-right');
+    const clientCards = document.querySelectorAll('.client-card');
+    const clientSection = document.querySelector('#clients-section');
+
+    fadeUpElements.forEach(element => {
+        fadeUpObserver.observe(element);
+    });
+
+    fadeSlideElements.forEach(element => {
+        fadeSlideObserver.observe(element);
+    });
+
+    if (clientSection) {
+        clientSectionObserver.observe(clientSection);
+    }
+
+    clientCards.forEach(element => {
+        clientObserver.observe(element);
+    });
+
+    const mainNavbar = document.querySelector('.navbar'); 
+    const secondaryNavbar = document.querySelector('.product-nav');
+    
+    function adjustSecondaryNavbar() {
+        if (mainNavbar && secondaryNavbar) {
+            const mainNavbarHeight = mainNavbar.offsetHeight;
+            secondaryNavbar.style.top = mainNavbarHeight + 'px';
+        }
+    }
+    
+    adjustSecondaryNavbar();
+    window.addEventListener('resize', adjustSecondaryNavbar);
+    
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const mainNavbarHeight = mainNavbar ? mainNavbar.offsetHeight : 90;
+        
+        if (scrollTop > lastScrollTop) {
+            if (secondaryNavbar) secondaryNavbar.style.top = "-70px";
+        } else {
+            if (secondaryNavbar) secondaryNavbar.style.top = mainNavbarHeight + "px";
         }
         
-        adjustSecondaryNavbar();
-        window.addEventListener('resize', adjustSecondaryNavbar);
-        
-        let lastScrollTop = 0;
-        
-        window.addEventListener('scroll', function () {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const mainNavbarHeight = mainNavbar ? mainNavbar.offsetHeight : 90;
-            
-            if (scrollTop > lastScrollTop) {
-                // Scroll down -> hide navbar
-                secondaryNavbar.style.top = "-70px";
-            } else {
-                // Scroll up -> show navbar
-                secondaryNavbar.style.top = mainNavbarHeight + "px";
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+    document.querySelectorAll('.product-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const offset = mainNavbar ? mainNavbar.offsetHeight + 70 : 160;
+                const targetPosition = targetElement.offsetTop - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
             }
-            
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     });
+});
 </script>

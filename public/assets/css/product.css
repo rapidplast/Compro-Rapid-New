@@ -69,9 +69,7 @@
     .highlight {
         font-size: 10px;
     }
-    .product{
-        background-image: url('/assets/images/home/product.jpeg');
-    }
+    /* Removed background-image URL from here - now handled in HTML */
     .ptext-product{
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -139,7 +137,7 @@
 }
 
 .bottles-img{
-    background-image: url('/assets/images/bottle.png');
+    /* Removed background-image URL from here - now handled in HTML */
     padding-top: 40px;
     height: 600px;
     margin-top: 20px;
@@ -203,7 +201,6 @@
     background-position: center;
     height: 330px;
 }
-
 
 .product-nav {
     position: fixed;
@@ -271,7 +268,6 @@
     border-bottom: 3px solid white;
 }
 
-
 @media (max-width: 992px) {
     .product-nav-container {
         padding: 0 15px;
@@ -288,7 +284,6 @@
         padding: 25px 15px;
     }
 }
-
 
 @media (max-width: 768px) {
     .product-nav {
@@ -341,6 +336,39 @@
     }
 }
 
+/* Product Showcase Animations */
+.fade-slide-right {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.product-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-showcase .products-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
 html {
     scroll-behavior: smooth;
@@ -350,4 +378,241 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+/* ===== CLIENT ANIMATIONS ===== */
+
+/* Client grid container animation */
+.clients-grid {
+    opacity: 0;
+    animation: fadeInGrid 1s ease-out forwards;
+}
+
+@keyframes fadeInGrid {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Individual client card animations */
+.client-card {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Staggered animation for client cards */
+.client-card:nth-child(1) { animation: slideInClient 0.8s ease-out 0.1s forwards; }
+.client-card:nth-child(2) { animation: slideInClient 0.8s ease-out 0.2s forwards; }
+.client-card:nth-child(3) { animation: slideInClient 0.8s ease-out 0.3s forwards; }
+.client-card:nth-child(4) { animation: slideInClient 0.8s ease-out 0.4s forwards; }
+.client-card:nth-child(5) { animation: slideInClient 0.8s ease-out 0.5s forwards; }
+.client-card:nth-child(6) { animation: slideInClient 0.8s ease-out 0.6s forwards; }
+.client-card:nth-child(7) { animation: slideInClient 0.8s ease-out 0.7s forwards; }
+.client-card:nth-child(8) { animation: slideInClient 0.8s ease-out 0.8s forwards; }
+.client-card:nth-child(9) { animation: slideInClient 0.8s ease-out 0.9s forwards; }
+.client-card:nth-child(10) { animation: slideInClient 0.8s ease-out 1.0s forwards; }
+.client-card:nth-child(11) { animation: slideInClient 0.8s ease-out 1.1s forwards; }
+.client-card:nth-child(12) { animation: slideInClient 0.8s ease-out 1.2s forwards; }
+.client-card:nth-child(13) { animation: slideInClient 0.8s ease-out 1.3s forwards; }
+.client-card:nth-child(14) { animation: slideInClient 0.8s ease-out 1.4s forwards; }
+.client-card:nth-child(15) { animation: slideInClient 0.8s ease-out 1.5s forwards; }
+.client-card:nth-child(16) { animation: slideInClient 0.8s ease-out 1.6s forwards; }
+.client-card:nth-child(17) { animation: slideInClient 0.8s ease-out 1.7s forwards; }
+.client-card:nth-child(18) { animation: slideInClient 0.8s ease-out 1.8s forwards; }
+.client-card:nth-child(19) { animation: slideInClient 0.8s ease-out 1.9s forwards; }
+.client-card:nth-child(20) { animation: slideInClient 0.8s ease-out 2.0s forwards; }
+.client-card:nth-child(21) { animation: slideInClient 0.8s ease-out 2.1s forwards; }
+.client-card:nth-child(22) { animation: slideInClient 0.8s ease-out 2.2s forwards; }
+.client-card:nth-child(23) { animation: slideInClient 0.8s ease-out 2.3s forwards; }
+.client-card:nth-child(24) { animation: slideInClient 0.8s ease-out 2.4s forwards; }
+.client-card:nth-child(25) { animation: slideInClient 0.8s ease-out 2.5s forwards; }
+
+@keyframes slideInClient {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Hover effects for client cards */
+.client-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.client-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.client-card:hover::before {
+    left: 100%;
+}
+
+/* Image hover effects */
+.client-card img {
+    transition: all 0.3s ease;
+    filter: grayscale(20%);
+}
+
+.client-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Client section title animation */
+.client-title-animate {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: titleSlideIn 1s ease-out 0.3s forwards;
+}
+
+@keyframes titleSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive client grid animations */
+@media (max-width: 1200px) {
+    .clients-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .client-card {
+        height: 100px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .client-card {
+        height: 90px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clients-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .client-card {
+        height: 80px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Loading animation for client images */
+.client-card img {
+    opacity: 0;
+    animation: imageLoad 0.5s ease-out forwards;
+}
+
+@keyframes imageLoad {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse effect for specific client cards */
+.client-card:nth-child(5n) {
+    animation-name: slideInClientPulse;
+}
+
+@keyframes slideInClientPulse {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(0) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Subtle floating animation for client cards when visible */
+.client-card.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Enhanced shadow effects */
+.client-card {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.client-card:hover {
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(255, 0, 0, 0.1);
+}
+
+/* Scroll-triggered animations */
+.clients-section-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.clients-section-animate.show {
+    opacity: 1;
+    transform: translateY(0);
 }

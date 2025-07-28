@@ -11,6 +11,8 @@
             <a href="#knowledge" class="product-link">Knowledge Through Experience</a>
             <a href="#product" class="product-link">Products & Service</a>
             <a href="#board" class="product-link">Broad Selection</a>
+            <a href="#product-showcase" class="product-link">Product Showcase</a>
+            <a href="#clients-section" class="product-link">Our Clients</a>
         </div>
     </div>
 </nav>
@@ -39,6 +41,7 @@
 <section id="knowledge" style="background-color: #EAE2E6;">
     <div class="knowledge">
         <h3><b><i>KNOWLEDGE THROUGH <span style="color: red;">EXPERIENCE</span></i></b></h3>
+        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <p style="padding: 50px;">With over 60 years of experience in plastics processing, we bring deep expertise in customer consultation. From design and material selection to the right production technology, we partner with our clients to create competitive, high-quality, and visually appealing packaging solutions.</p>
     </div>
 </section>
@@ -86,9 +89,10 @@
     </div>
 </section>
 
-<section id="product" class="product m-0">
+<section id="product" class="product m-0" style="background-image: url('{{ asset('assets/images/home/product.jpeg') }}');">
     <i>
-        <h4 style="margin-top: -70px;" class="ptext-product">PRODUCT <span style="color: red; font-size: 26px"> & SERVICE</span></h4>
+        <h4 style="color: black;margin-top: -70px;" class="ptext-product">PRODUCT <span style="color: red; font-size: 26px"> & SERVICE</span></h4>
+        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
     </i>
     <div class="container text-center">
         <div class="d-flex flex-wrap justify-content-md-between justify-content-center" style="gap: 90px; padding-top: 100px;">
@@ -108,7 +112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="{{ asset('assets/images/home/botol.jpeg') }}" style="width: 100%; height: 110px; margin-top: 10%;" alt="">
+                        <img src="{{asset('assets/images/home/botol.jpeg')}}" style="width: 100%; height: 110px; margin-top: 10%;" alt="">
                         <p style="padding: 10px;">Plastic containers are the packaging of choice for a wide range of household needs,
                              including personal care products, food & beverages, medicines, and cleaning tools.
                         </p>
@@ -163,6 +167,7 @@
 <section class="safety" style="background-color: #EAE2E6;">
     <h5 style="font-size: 28px;  margin: 10px 0;">
         Food Safety, Quality,  <span class="highlight" style="font-size: 28px; font-weight: bold; color: red;">OHS and Environment Policy</span>
+        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
     </h5>
     <div class="d-flex flex-column mt-5 p-5">
         <div class="d-flex flex-wrap justify-content-between ">
@@ -212,15 +217,13 @@
     </div>
 </section>
 
+<!-- Bottles Section -->
 <section id="board" style="background-color: #EAE2E6;">
     <div class="bottles">
-        <b ><h4 class="m-0">A BROAD SELECTION OF <span style="color: red">STANDARDIZED PRODUCTS</span></h4></b>
+        <b><h4 class="m-0">A BROAD SELECTION OF <span style="color: red">STANDARDIZED PRODUCTS</span></h4></b>
+        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
     </div>
-    <div class="bottles-img position-relative" style="overflow: hidden; height: 500px;">
-        <!-- Gambar Background -->
-        <img src="{{asset('assets/images/bottle.png')}}" alt="Bottles"
-             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
-
+    <div class="bottles-img position-relative" style="overflow: hidden; height: 500px; background-image: url('{{ asset('assets/images/bottle.png') }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <!-- Teks Overlay -->
         <div class="position-absolute" style="bottom: 40px; left: 60px; z-index: 1; color: white; text-align: left;">
             <h1 style="font-weight: bold; font-size: 48px; margin: 0;">BOTTLES</h1>
@@ -229,14 +232,135 @@
     </div>
 </section>
 
-<section id="" style="background-color: #EAE2E6;">
-    <div class="last-text">
-        <h5 class="m-0">Throughout the years, the RAPID PLAST group has
-            established an extensive collection of standardized
-            packaging. Through our Standard Product Catalog, 
-            we offer over 600 standard packaging solutions for our clients."
-        </h5>
-        <button type="button" class="btn btn-secondary" style="margin-top: 60px; width: 540px;">Product Catalogue Rapid Plast</button>
+<!-- Product Showcase Section moved below Bottles -->
+<section id="product-showcase" style="background: #f5f5f5 ; padding: 80px 0;">
+    <div class="container text-center">
+        <h4 style="color: #333; font-size: 28px; font-weight: bold; margin-bottom: 30px;">
+            PRODUCT <span style="color: red;">SHOWCASE</span>
+            <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
+        </h4>
+        <p style="color: black; font-size: 18px; margin-bottom: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+            Click on a product in each of the three different sectors to get more information about the type and design of the special Dynapack packaging involved
+        </p>
+        
+        <div class="products-grid d-flex justify-content-center align-items-center gap-4 flex-wrap">
+            <div class="product-item fade-slide-right" style="animation-delay: 0.1s;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/vaseline.png')}}" alt="Vaseline Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            
+            <div class="product-item fade-slide-right" style="animation-delay: 0.2s;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/wardah.png')}}" alt="Wardah Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            
+            <div class="product-item fade-slide-right" style="animation-delay: 0.3s;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/sikatgigi.png')}}" alt="Toothbrush Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            
+            <div class="product-item fade-slide-right" style="animation-delay: 0.4s;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/blender.png')}}" alt="Blender Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            
+            <div class="product-item fade-slide-right" style="animation-delay: 0.5s;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/oli.png')}}" alt="Castrol Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            
+            <div class="product-item fade-slide-right" style="animation-delay: 0.6s;">
+                <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
+                    <img src="{{asset('assets/images/product/olimobil.png')}}" alt="Mobil Oil Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="clients-section" style="background-color: #EAE2E6; padding: 80px 0;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h4 style="color: #333; font-size: 28px; font-weight: bold;">
+                OUR <span style="color: red;">CLIENTS</span>
+            </h4>
+            <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
+        </div>
+        
+        <div class="clients-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; margin-top: 60px;">
+            <!-- Row 1 -->
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/aqua.png')}}" alt="Coca Cola" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/bdf.png')}}" alt="Aqua" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/erela.png')}}" alt="Philips" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/gajah.png')}}" alt="Johnson & Johnson" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/indolakto.png')}}" alt="Beiersdorf" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/johmon.png')}}" alt="Palmtop" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/konicare.png')}}" alt="Tupperware" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/nestle.png')}}" alt="Unilever" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/otsuka.png')}}" alt="FrieslandCampina" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/paragon.png')}}" alt="P&G" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/rn.png')}}" alt="ExxonMobil" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/rohto.png')}}" alt="ABC" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/simp.png')}}" alt="SC Johnson" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/sinarmas.png')}}" alt="Shell" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/tempo.png')}}" alt="BP Castrol" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/unilever.png')}}" alt="Masan Group" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/viva.png')}}" alt="Paragon" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/wardah.png')}}" alt="Indomilk" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/widatra.png')}}" alt="PT Astra Honda Motor" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+            <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
+                <img src="{{asset('assets/images/clients/konimex.png')}}" alt="Reckitt Benckiser" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -287,6 +411,7 @@
   });
 </script>
 
+
 <script>
     // Script untuk navbar Product style dengan penyesuaian otomatis
     document.addEventListener('DOMContentLoaded', function() {
@@ -301,11 +426,9 @@
             }
         }
         
-        // Panggil saat load dan resize
         adjustSecondaryNavbar();
         window.addEventListener('resize', adjustSecondaryNavbar);
         
-        // Script scroll yang sudah diperbaiki
         let lastScrollTop = 0;
         
         window.addEventListener('scroll', function () {

@@ -36,19 +36,19 @@
                     <a href="{{ url('/product') }}" class="btn" style="background: #c2c6ca; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 18px;">Learn More</a>
                 </div>  
             </div>
-            <div class="innovation" style="background-image: url('{{asset('assets/images/home/tekstil.JPG')}}'); background-repeat: no-repeat; background-size: cover; background-position: center 70%; width: 100%; height: 70vh; ">
+            <div class="innovation" style="background-image: url('{{asset('assets/images/home/tekstil.jpg')}}'); background-repeat: no-repeat; background-size: cover; background-position: center 70%; width: 100%; height: 70vh; ">
             <div class="overlay" style="text-align: center; padding-top: 190px;">
                     <h2 style="color: white; font-weight: bold; font-size: 58px;">QUALITY COMMITMENT & SUSTAINBILITY</h2>
                     <a href="{{ url('/quality') }}" class="btn" style="background: #c2c6ca; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 18px;">Learn More</a>
                 </div>  
             </div>
-            <div class="innovation" style="background-image: url('{{asset('assets/images/home/paktua.JPG')}}'); background-repeat: no-repeat; background-size: cover;background-position: center 70%; width: 100%; height: 70vh; ">
+            <div class="innovation" style="background-image: url('{{asset('assets/images/home/paktua.jpg')}}'); background-repeat: no-repeat; background-size: cover;background-position: center 70%; width: 100%; height: 70vh; ">
                 <div class="overlay" style="text-align: center; padding-top: 190px;">
                     <h2 style="color: white; font-weight: bold; font-size: 58px;">CARRER</h2>
                     <a href="{{ url('/carrier') }}" class="btn" style="background: #c2c6ca; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 18px;">Learn More</a>
                 </div>  
             </div>
-            <div class="innovation" style="background-image: url('{{asset('assets/images/home/bangunan.JPG')}}'); background-repeat: no-repeat; background-size: cover;background-position: center 55%; width: 100%; height: 70vh; ">
+            <div class="innovation" style="background-image: url('{{asset('assets/images/home/bangunan.jpg')}}'); background-repeat: no-repeat; background-size: cover;background-position: center 55%; width: 100%; height: 70vh; ">
                 <div class="overlay" style="text-align: center; padding-top: 190px;">
                     <h2 style="color: white; font-weight: bold; font-size: 58px;">CONTACT</h2>
                     <a href="{{ url('/contact_us') }}" class="btn" style="background: #c2c6ca; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 18px;">Learn More</a>

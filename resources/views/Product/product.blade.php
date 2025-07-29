@@ -23,6 +23,7 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('assets/css/product.css') }}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
 <div id="preloader">
     <img src="{{ asset('/assets/images/logo.png') }}" alt="Loading...">
 </div>
@@ -38,7 +39,7 @@
     </div>
 </section>
 
-<section id="knowledge" style="background-color: #EAE2E6;">
+<section id="knowledge" style="background-color: #ffffffff;">
     <div class="knowledge">
         <h3><b><i>KNOWLEDGE THROUGH <span style="color: red;">EXPERIENCE</span></i></b></h3>
         <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
@@ -46,12 +47,12 @@
     </div>
 </section>
 
-<section style="background-color: #EAE2E6;">
+<section style="background-color: #ffffffff;">
     <div class="img-des">
         <div class="container text-center">
             <div class="row align-items-center">
               <div class="col">
-                <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
+                <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/product/consumer.png')}}" alt="">
               </div>
               <div class="col des-1">
                 <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b>
@@ -70,14 +71,14 @@
                 </p>
               </div>
               <div class="col">
-                <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
+                <img class="ip" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/product/package.png')}}" alt="">
               </div>
             </div>
         </div>
         <div class="container text-center P-5">
             <div class="row align-items-center">
               <div class="col">
-                <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
+                <img class="pd" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/product/pabrik.png')}}" alt="">
               </div>
               <div class="col des-3">
                 <b><h5><i>PRODUCT <span style="color: red;">DESIGN</span></i></h5></b>
@@ -89,82 +90,65 @@
     </div>
 </section>
 
-<section id="product" class="product m-0" style="background-image: url('{{ asset('assets/images/home/product.jpeg') }}');">
-    <i>
-        <h4 style="color: black;margin-top: -70px;" class="ptext-product">PRODUCT <span style="color: red; font-size: 26px"> & SERVICE</span></h4>
-        <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
-    </i>
-    <div class="container text-center">
-        <div class="d-flex flex-wrap justify-content-md-between justify-content-center" style="gap: 90px; padding-top: 100px;">
-                <div class="card-product shadow-lg" style="width: 15rem;">
-                    <div class="card-body-product">
-                        <div class="container text-start" style="margin-top: 30px">
-                            <div class="row align-items-start">
-                                <div class="col">
-                                    <div class="box">
-                                        <i class="bi bi-box-seam-fill"
-                                            style="margin-left: 10px; font-size: 25px; color: rgb(255, 12, 12);">
-                                        </i>
-                                    </div>
-                                </div>
-                                <div class="col" style="margin-left: -100px; font-size: 14px; font-weight: bold;">
-                                    Tube Packaging
-                                </div>
-                            </div>
+<section id="product" class="clean-product-section m-0" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('{{asset("assets/images/home/product.jpeg")}}'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-title">
+                    PRODUCT <span class="red-highlight">& SERVICE</span>
+                </h4>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="products-row">
+                <div class="product-box">
+                    <div class="box-header">
+                        <div class="logo-placeholder">
+                            <i class="bi bi-box-seam"></i>
                         </div>
-                        <img src="{{asset('assets/images/home/botol.jpeg')}}" style="width: 100%; height: 110px; margin-top: 10%;" alt="">
-                        <p style="padding: 10px;">Plastic containers are the packaging of choice for a wide range of household needs,
-                             including personal care products, food & beverages, medicines, and cleaning tools.
-                        </p>
+                        <h5 class="box-title">Container Packaging</h5>
+                    </div>
+                    <div class="box-image">
+                        <img src="{{asset('assets/images/home/botol.jpeg')}}" alt="Container Packaging" onerror="this.src='https://via.placeholder.com/300x160/c41e3a/ffffff?text=Container+Packaging'">
+                    </div>
+                    <div class="box-content">
+                        <p>Plastic containers are the packaging of choice for a wide range of household needs, including personal care products, food & beverages, medicines, and cleaning tools.</p>
                     </div>
                 </div>
-                <div class="card-product shadow-lg" style="width: 15rem;">
-                    <div class="card-body-product">
-                        <div class="container text-start" style="margin-top: 30px">
-                            <div class="row align-items-start">
-                                <div class="col">
-                                    <div class="box">
-                                        <i class="bi bi-box-seam"
-                                            style="margin-left: 10px; font-size: 25px; color: rgb(255, 1, 1);"></i>
-                                    </div>
-                                </div>
-                                <div class="col" style="margin-left: -100px; font-size: 14px; font-weight: bold;">
-                                    Tube Packaging
-                                </div>
-                            </div>
-                        </div>
-                        <img src="{{asset('assets/images/home/tub.jpeg')}}" style="width: 100%; height: 110px; margin-top: 10%;"
-                            alt="">
-                        <p style="padding: 10px;">Tube packaging is ideal for thick liquids and pastes,
-                             including industrial chemicals, automotive products, medical ointments, and artistic pigments.</p>
-                    </div>
-                </div>
-                <div class="card-product shadow-lg" style="width: 15rem;">
-                    <div class="card-body-product">
-                        <div class="container text-start" style="margin-top: 30px">
-                            <div class="row align-items-start">
-                                <div class="col">
-                                    <div class="box">
-                                        <i class="bi bi-motherboard"
-                                            style="margin-left: 10px; font-size: 25px; color: rgb(255, 0, 0);"></i>
-                                    </div>
-                                </div>
-                                <div class="col" style="margin-left: -100px; font-size: 14px; font-weight: bold;">
-                                    Tube Packaging
-                                </div>
-                            </div>
-                        </div>
-                        <img src="{{asset('assets/images/home/cek.jpg')}}" style="width: 100%; height: 110px; margin-top: 10%;"
-                            alt="">
-                        <p style="padding: 10px;">An essential component of plastic packaging for packing home goods,
-                            personal care products, and groceries.</p>
-                    </div>
-                </div>
-        </div>
-    </div>
-</section>
 
-<section class="safety" style="background-color: #EAE2E6;">
+                <div class="product-box">
+                    <div class="box-header">
+                        <div class="logo-placeholder">
+                            <i class="bi bi-capsule"></i>
+                        </div>
+                        <h5 class="box-title">Tube Packaging</h5>
+                    </div>
+                    <div class="box-image">
+                        <img src="{{asset('assets/images/home/tub.jpeg')}}" alt="Tube Packaging" onerror="this.src='https://via.placeholder.com/300x160/c41e3a/ffffff?text=Tube+Packaging'">
+                    </div>
+                    <div class="box-content">
+                        <p>Tube packaging is ideal for thick liquids and pastes, including industrial chemicals, automotive products, medical ointments, and artistic pigments.</p>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="box-header">
+                        <div class="logo-placeholder">
+                            <i class="bi bi-grid-3x3-gap"></i>
+                        </div>
+                        <h5 class="box-title">Component Packaging</h5>
+                    </div>
+                    <div class="box-image">
+                        <img src="{{asset('assets/images/home/cek.jpg')}}" alt="Component Packaging" onerror="this.src='https://via.placeholder.com/300x160/c41e3a/ffffff?text=Component+Packaging'">
+                    </div>
+                    <div class="box-content">
+                        <p>An essential component of plastic packaging for packing home goods, personal care products, and groceries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="safety" style="background-color: #ffffffff;">
     <h5 style="font-size: 28px;  margin: 10px 0;">
         Food Safety, Quality,  <span class="highlight" style="font-size: 28px; font-weight: bold; color: red;">OHS and Environment Policy</span>
         <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
@@ -218,7 +202,7 @@
 </section>
 
 <!-- Bottles Section -->
-<section id="board" style="background-color: #EAE2E6;">
+<section id="board" style="background-color: #ffffffff;">
     <div class="bottles">
         <b><h4 class="m-0">A BROAD SELECTION OF <span style="color: red">STANDARDIZED PRODUCTS</span></h4></b>
         <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
@@ -233,7 +217,7 @@
 </section>
 
 <!-- Product Showcase Section moved below Bottles -->
-<section id="product-showcase" style="background: #f5f5f5 ; padding: 80px 0;">
+<section id="product-showcase" style="background: #f5f5f5; padding: 80px 0;">
     <div class="container text-center">
         <h4 style="color: #333; font-size: 28px; font-weight: bold; margin-bottom: 30px;">
             PRODUCT <span style="color: red;">SHOWCASE</span>
@@ -246,7 +230,7 @@
         <div class="products-grid d-flex justify-content-center align-items-center gap-4 flex-wrap">
             <div class="product-item fade-slide-right" style="animation-delay: 0.1s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/aqua.png')}}" alt="Aqua Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/vaseline.png')}}" alt="Aqua Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
@@ -258,7 +242,7 @@
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.3s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/viva.jpg')}}" alt="Viva Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/pocari.png')}}" alt="Viva Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
@@ -270,20 +254,20 @@
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.5s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex;overflow: hidden; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/nestle.png')}}" alt="Nestle Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/viva.jpg')}}" alt="Nestle Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
             
             <div class="product-item fade-slide-right" style="animation-delay: 0.6s;">
                 <div class="product-card" style="background: white; border-radius: 10px; padding: 20px; width: 180px; height: 200px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.3s ease;">
-                    <img src="{{asset('assets/images/product/pocari.png')}}" alt="Mobil Oil Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="{{asset('assets/images/product/aqua.png')}}" alt="Mobil Oil Product" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="clients-section" style="background-color: #EAE2E6; padding: 80px 0;">
+<section id="clients-section" style="background-color: #ebebebff; padding: 80px 0;">
     <div class="container">
         <div class="text-center mb-5">
             <h4 style="color: #333; font-size: 28px; font-weight: bold;">

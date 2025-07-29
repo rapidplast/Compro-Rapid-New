@@ -47,7 +47,7 @@
     </div>
 </section>
 
-    <section id="id" class="ideas" style="background-color: #EAE2E6">
+    <section id="id" class="ideas" style="background-color: #ffffffff">
         <b><h4>TURNING IDEAS <span class="highlight">INTO SOLUTIONS</span></h4></b>
         <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <div class="sub-ideas">
@@ -58,7 +58,7 @@
         </div>
     </section>
 
-    <section id="ino" class="inovasi-2" style="background-color: #EAE2E6">
+    <section id="ino" class="inovasi-2" style="background-color: #ffffffff">
         <p class="text-inovasi-2" style=" font-weight: normal;color: black; text-align: center;">INNOVATIVE SOLUTIONS ALIGN WITH <span class="highlight">DNPA SUSTAINABILITY GOALS,</span>  AS FOLLOWS</p>
         <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <div class="container text-center">
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section id="collab" class="realm p-5" style="position: relative; background-color: #EAE2E6;">
+    <section id="collab" class="realm p-5" style="position: relative; background-color: #ffffffff;">
         <div style="position: absolute; top: 200px; left: 0; right: 0; height: 300px; background-color: gray; z-index: 1;"></div>    
         <div class="container text-center p-0" style="position: relative; z-index: 2;">
             <div class="row align-items-start">
@@ -136,68 +136,237 @@
         </div>
     </section>
 
-    <section id="product" class="product-dd" style="padding-left: 30px; padding-bottom: 30px; background-color: #EAE2E6;">
-        <div class="text-product-dd">
-            <i>
-                <p style="font-weight: bold; color: black; font-size: 25px;">
-                    DISTINCTIVE <span class="highlight"> PRODUCT FEATURES</span>
-                </p>
-            </i>
-        </div>
-        <br>
-        <div class="image-dd">
-            <div class="content p-0">
-                <div class="accordion">
-                    <div class="accordion-item"
-                        style="background-color: #EAE2E6; border-color: black; border-left: none; border-right: none; border-top: none;">
-                        <span style="color: black;">TUBE LONG NOZZLE</span>
-                        <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
-                            height="200">
-                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
-                            width="300" height="200" style="padding-top: 20px;">
-                    </div>
-                    <div class="accordion-item"
-                        style="background-color: #EAE2E6; border-color: black; border-left: none; border-right: none; border-top: none;">
-                        <span style="color: black;">NECK TO NECK BOTTLE</span>
-                        <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
-                            height="200">
-                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
-                            width="300" height="200" style="padding-top: 20px;">
-                    </div>
-                    <div class="accordion-item"
-                        style="background-color: #EAE2E6; border-color: black; border-left: none; border-right: none; border-top: none;">
-                        <span style="color: black;">CUSTOM-DESIGNED BOTTLE AND CLOSURE</span>
-                        <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
-                            height="200">
-                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
-                            width="300" height="200" style="padding-top: 20px;">
-                    </div>
-                    <div class="accordion-item"
-                        style="background-color: #EAE2E6; border-color: black; border-left: none; border-right: none; border-top: none;">
-                        <span style="color: black;">WELDSPOUT FOR POUCHES</span>
-                        <i class="bi bi-plus-circle-fill" onclick="toggleDropdown(this)"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="oli" width="300"
-                            height="200">
-                        <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="tutup-oli"
-                            width="300" height="200" style="padding-top: 20px;">
+<section id="product" class="product-dd" style="padding: 60px 30px; background-color: #ffffff;">
+    <div class="text-product-dd">
+                    <i><p style="text-align: start; color: black; font-size: 30px;">
+                        DISTINCTIVE
+                        <span class="highlight">PRODUCT FEATURES</span> <br>
+                    </p></i> 
+    </div>
+    
+    <div class="features-container" style="max-width: 1200px; margin: 0 auto;">
+        
+        <!-- ANTI-COUNTERFEIT SOLUTION -->
+        <div class="feature-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <div class="feature-header" onclick="toggleSimpleFeature('anti')" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;">
+                <span style="font-size: 16px; color: #666; font-weight: normal;">TUBE LONG NOZZLE</span>
+                <div class="toggle-circle" id="anti-toggle" style="width: 35px; height: 35px; border-radius: 50%; background-color: #666; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>
+                </div>
+            </div>
+            <div class="feature-content" id="anti-content" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                <div class="content-inner" style="padding: 20px 0;">
+                    <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Heat Activated Embedded Mark
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Light Activated
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Heat Activated" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Light Activated" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- CLOSURES WITH SPECIAL FUNCTION -->
+        <div class="feature-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <div class="feature-header" onclick="toggleSimpleFeature('closures')" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;">
+                <span style="font-size: 16px; color: #666; font-weight: normal;">NECK TO NECK BOTTLE</span>
+                <div class="toggle-circle" id="closures-toggle" style="width: 35px; height: 35px; border-radius: 50%; background-color: #666; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>
+                </div>
+            </div>
+            <div class="feature-content" id="closures-content" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                <div class="content-inner" style="padding: 20px 0;">
+                    <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            CRSF Closures
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Special Tamper Evident Band
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="CRSF Closures" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Tamper Evident" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CUSTOM-DESIGNED BOTTLE AND CLOSURE -->
+        <div class="feature-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <div class="feature-header" onclick="toggleSimpleFeature('custom')" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;">
+                <span style="font-size: 16px; color: #666; font-weight: normal;">CUSTOM-DESIGNED BOTTLE AND CLOSURE</span>
+                <div class="toggle-circle" id="custom-toggle" style="width: 35px; height: 35px; border-radius: 50%; background-color: #666; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>
+                </div>
+            </div>
+            <div class="feature-content" id="custom-content" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                <div class="content-inner" style="padding: 20px 0;">
+                    <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Custom Bottle Design
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Custom Closure Design
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Custom Bottle" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Custom Closure" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREATE ALTERNATIVE SOLUTION FOR PAPER PACKAGING AND POUCHES -->
+        <div class="feature-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <div class="feature-header" onclick="toggleSimpleFeature('alternative')" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;">
+                <span style="font-size: 16px; color: #666; font-weight: normal;">CREATE ALTERNATIVE SOLUTION FOR PAPER PACKAGING AND POUCHES</span>
+                <div class="toggle-circle" id="alternative-toggle" style="width: 35px; height: 35px; border-radius: 50%; background-color: #666; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>
+                </div>
+            </div>
+            <div class="feature-content" id="alternative-content" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                <div class="content-inner" style="padding: 20px 0;">
+                    <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Paper Packaging Solution
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Pouch Packaging Solution
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Paper Packaging" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Pouch Packaging" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISUALLY ATTRACTIVE PACKAGING CONCEPTS -->
+        <div class="feature-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <div class="feature-header" onclick="toggleSimpleFeature('visual')" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;">
+                <span style="font-size: 16px; color: #666; font-weight: normal;">VISUALLY ATTRACTIVE PACKAGING CONCEPTS</span>
+                <div class="toggle-circle" id="visual-toggle" style="width: 35px; height: 35px; border-radius: 50%; background-color: #666; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>
+                </div>
+            </div>
+            <div class="feature-content" id="visual-content" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                <div class="content-inner" style="padding: 20px 0;">
+                    <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Attractive Design A
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Attractive Design B
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Design A" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Design B" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COST-SAVING -->
+        <div class="feature-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <div class="feature-header" onclick="toggleSimpleFeature('cost')" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;">
+                <span style="font-size: 16px; color: #666; font-weight: normal;">WELDSPOUT FOR POUCHES</span>
+                <div class="toggle-circle" id="cost-toggle" style="width: 35px; height: 35px; border-radius: 50%; background-color: #666; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>
+                </div>
+            </div>
+            <div class="feature-content" id="cost-content" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                <div class="content-inner" style="padding: 20px 0;">
+                    <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Cost-Effective Solution A
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Cost-Effective Solution B
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Cost Solution A" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Cost Solution B" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
     @include('layouts.footer')
+
+<script>
+function toggleSimpleFeature(feature) {
+    // Close all other features first
+    const allContents = document.querySelectorAll('.feature-content');
+    const allToggles = document.querySelectorAll('.toggle-circle');
+    
+    const currentContent = document.getElementById(feature + '-content');
+    const currentToggle = document.getElementById(feature + '-toggle');
+    const isCurrentlyOpen = currentContent.style.maxHeight !== '0px' && currentContent.style.maxHeight !== '';
+    
+    // Close all features
+    allContents.forEach(content => {
+        content.style.maxHeight = '0';
+    });
+    
+    allToggles.forEach(toggle => {
+        toggle.style.backgroundColor = '#8B0000';
+        toggle.innerHTML = '<i class="bi bi-plus" style="color: white; font-size: 18px; font-weight: bold;"></i>';
+    });
+    
+    // If the clicked feature wasn't open, open it
+    if (!isCurrentlyOpen) {
+        currentContent.style.maxHeight = '1000px';
+        currentToggle.style.backgroundColor = '#8B0000';
+        currentToggle.innerHTML = '<i class="bi bi-dash" style="color: white; font-size: 18px; font-weight: bold;"></i>';
+    }
+}
+
+// Add hover effects
+document.addEventListener('DOMContentLoaded', function() {
+    const featureHeaders = document.querySelectorAll('.feature-header');
+    featureHeaders.forEach(header => {
+        header.addEventListener('mouseenter', function() {
+            const toggle = this.querySelector('.toggle-circle');
+            if (toggle.style.backgroundColor !== '#8B0000') {
+                toggle.style.backgroundColor = '#8B0000';
+            }
+        });
+        
+        header.addEventListener('mouseleave', function() {
+            const toggle = this.querySelector('.toggle-circle');
+            if (toggle.style.backgroundColor !== '#8B0000') {
+                toggle.style.backgroundColor = '#8B0000';
+            }
+        });
+    });
+});
+</script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

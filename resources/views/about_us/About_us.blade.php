@@ -30,15 +30,6 @@
     </div>
 </nav>
 
-<!--<div class="top-text" style="background-image: url('{{asset('assets/images/inovation/rapid4.jpeg')}}'); background-size: cover; background-position: center; margin-top: 100px;">
-    <div class="text-2">
-    <p class="headline" style="font-weight: bold;margin-bottom: -60px; color: rgb(255, 255, 255); padding-top: 50px;">LEADERSHIP WITH</p> 
-    <p class="headline" style="font-weight: bold; color: rgb(255, 0, 0); padding-top: 50px;">EXTENSIVE INDUSTRY EXPERIENCE</p> 
-    <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">Our Board of Directors and Management team consists of seasoned </p>
-    <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">Professionals with extensive experience in the rigid</p>
-    <p style="font-size: 18px;margin-bottom: -1px; color: rgb(255, 255, 255);">Plastic packaging industry under the leadership of ...... and ......</p>
-    </div>
-</div>-->
 
 <section id="on-top">
     <div class="one-stop" style="background-image: url('{{ asset('assets/images/address.jpg') }}'); background-size: cover; background-position: center 23%; margin-top: 100px;">
@@ -52,7 +43,7 @@
     </div>
 </section>
 
-<div id="companyGlobal" class="container-fluid text-center vimi" style="padding-top: 50px; background-color: #EAE2E6;">
+<div id="companyGlobal" class="container-fluid text-center vimi" style="padding-top: 50px; background-color: #ffffffff;">
     <div style="padding: 30px;" class="global"><h3><i><b>COMPANY <span class="highlight">GLOBAL PRESENCE</span></i></h3></b>
     <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
         <div class="global-text" style="padding: 30px;">
@@ -65,7 +56,7 @@
     </div>
     <div id="vimi" class="row align-items-start fade-in-up p-0">
         <div class="col">
-            <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
+            <img class="visi" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/dot.jpg')}}" alt="">
         </div>
         <div class="col visi-teks p-4">
             <i><h4 style="text-align: center;font-weight: bold; font-size: 28px; ">OUR <span class="highlight" style="font-weight: bold; font-size: 30px;">VISION</span></h4></i>
@@ -89,11 +80,11 @@
             </ul>
         </div>
         <div class="col order-1 order-md-2">
-            <img class="visi" style="margin-top: 120px; width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/misi.png')}}" alt="">
+            <img class="visi" style="margin-top: 120px; width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/cnc.png')}}" alt="">
         </div>
     </div>
 
-<div id="motto" style="display: flex; align-items: center; background-color: #EAE2E6;  font-family: 'Times New Roman', Times, serif;">
+<div id="motto" style="display: flex; align-items: center; background-color: #ffffffff;  font-family: 'Times New Roman', Times, serif;">
         <div style="flex: 1; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
           <div style="width: 100%; height: 100%; position: relative;">
             <img src="{{asset('/assets/images/about_us/visi.png')}}" alt="Responsibility" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
@@ -163,7 +154,7 @@
     </div>
 </section>
 
-<div id="bo" class="rapid" style="background-color: #EAE2E6; padding-bottom: 50px;">
+<div id="bo" class="rapid" style="background-color: #e8e8e8ff; padding-bottom: 50px;">
     <i><h4 style="text-align: center; font-size: 32px;font-weight: bold; ">RAPID PLAST INDUSTRY <span class="highlight" style="font-weight: bold; font-size: 32px;">BRANCH OFFICE</span></h4></i>
     <div style="width: 60px; height: 4px; background-color: #ff0000ff; margin: 20px auto;"></div>
 <div class="d-flex d-lg-none justify-content-center flex-column align-items-center">

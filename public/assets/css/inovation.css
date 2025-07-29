@@ -514,3 +514,29 @@ html {
     padding-top: 220px; 
     height: 600px;
 }
+
+.feature-header:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+@media (max-width: 768px) {
+    .products-table {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .feature-header span {
+        font-size: 14px !important;
+        padding-right: 10px;
+    }
+    
+    .toggle-circle {
+        min-width: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-header span {
+        font-size: 13px !important;
+        line-height: 1.3;
+    }
+}

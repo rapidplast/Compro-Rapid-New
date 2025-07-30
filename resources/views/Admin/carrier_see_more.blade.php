@@ -26,14 +26,14 @@
         </div>
 
         <div class="content">
-            <p>{{ $carrier->jobdesk }}.</p>
-
-            <h2>Qualifications:</h2>
+                        <h2>Qualifications :</h2>
             <ul>
                 @foreach ($carrier->kualifikasi as $qualification)
                     <li>{{ $qualification }}</li>
                 @endforeach
             </ul>
+            <h2>Jobdesc :</h2>
+            <p>{{ $carrier->jobdesk }}.</p>
         </div>
 
         <div class="footer">

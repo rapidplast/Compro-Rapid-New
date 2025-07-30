@@ -6,7 +6,7 @@
 
 <nav class="product-nav">
     <div class="product-nav-container">
-        <div class="product-nav-title">Product</div>
+        <div class="product-nav-title">Product & Services</div>
         <div class="product-nav-links">
             <a href="#knowledge" class="product-link">Knowledge Through Experience</a>
             <a href="#product" class="product-link">Products & Service</a>

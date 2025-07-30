@@ -158,16 +158,16 @@
                 <div class="content-inner" style="padding: 20px 0;">
                     <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Heat Activated Embedded Mark
+                            Straight Long Nozzle
                         </div>
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Light Activated
+                            Angled (Bent) Long Nozzle
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Heat Activated" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/redmuzzle.png')}}" alt="Heat Activated" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Light Activated" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/bensin.png')}}" alt="Light Activated" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                     </div>
                 </div>
@@ -186,16 +186,16 @@
                 <div class="content-inner" style="padding: 20px 0;">
                     <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            CRSF Closures
+                            Single Neck to Neck Bottle 
                         </div>
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Special Tamper Evident Band
+                            Twin Bottle
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="CRSF Closures" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/botolmerah.png')}}" alt="CRSF Closures" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Tamper Evident" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/twin.png')}}" alt="Tamper Evident" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                     </div>
                 </div>
@@ -214,19 +214,43 @@
                 <div class="content-inner" style="padding: 20px 0;">
                     <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Custom Bottle Design
+                            AQUA Cap
                         </div>
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Custom Closure Design
+                            Benecol
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Custom Bottle" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/aquacap.jpg')}}" alt="Custom Bottle" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Custom Closure" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/benecol.jpg')}}" alt="Custom Closure" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                            <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Evalube 1ltr
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Federal Oil
+                        </div>
+                            <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/olievaluabe1ltr.jpg')}}" alt="Custom Bottle" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/federal.jpg')}}" alt="Custom Closure" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                                                    <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Evaluate 4ltr
+                        </div>
+                        <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
+                            Vitalis
+                        </div>
+                            <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/4ltr.jpg')}}" alt="Custom Bottle" style="max-width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                            <img src="{{asset('assets/images/inovation/vitalis.jpg')}}" alt="Custom Closure" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
         </div>
 
@@ -251,7 +275,7 @@
                             <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Paper Packaging" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Pouch Packaging" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/pouch.png')}}" alt="Pouch Packaging" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                     </div>
                 </div>
@@ -276,7 +300,7 @@
                             Attractive Design B
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Design A" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/ember.jpeg')}}" alt="Design A" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
                             <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Design B" style="max-width: 100%; height: auto; border-radius: 5px;">
@@ -298,16 +322,16 @@
                 <div class="content-inner" style="padding: 20px 0;">
                     <div class="products-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #ddd;">
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Cost-Effective Solution A
+                            Lightweighting Through Product Design and Process
                         </div>
                         <div class="table-header" style="background-color: #8B0000; color: white; padding: 15px; text-align: center; font-weight: bold;">
-                            Cost-Effective Solution B
+                            Lightweighting Through Foaming Structure
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/oli.jpeg')}}" alt="Cost Solution A" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/light.png')}}" alt="Cost Solution A" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                         <div class="table-cell" style="padding: 20px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; min-height: 200px;">
-                            <img src="{{asset('assets/images/inovation/tutup-oli.jpeg')}}" alt="Cost Solution B" style="max-width: 100%; height: auto; border-radius: 5px;">
+                            <img src="{{asset('assets/images/inovation/structure.png')}}" alt="Cost Solution B" style="max-width: 100%; height: auto; border-radius: 5px;">
                         </div>
                     </div>
                 </div>

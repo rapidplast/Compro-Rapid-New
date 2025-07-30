@@ -4,7 +4,18 @@
     @include('layouts.navbar')
 @endif
 
-
+<!-- Quality Navigation Bar (sama seperti product page tapi untuk quality) -->
+<nav class="quality-nav">
+    <div class="quality-nav-container">
+        <div class="quality-nav-title">Quality Commitment & Sustainability </div>
+        <div class="quality-nav-links">
+            <a href="#sustainability-goals" class="quality-link">Sustainability Goals</a>
+            <a href="#sustainability-report" class="quality-link">Sustainability Report</a>
+            <a href="#sustainability-award" class="quality-link">Sustainability Award</a>
+            <a href="#winner-project" class="quality-link">Winner Project</a>
+        </div>
+    </div>
+</nav>
 
 @section('title')
  Quality
@@ -30,7 +41,7 @@
     </div>
 </section>
 
-<section style="background-color: #EAE2E6;">
+<section id="sustainability-goals" style="background-color: #EAE2E6;">
     <div class="first-text">
         <div class="sdg">
             <h3>Sustability Development <span style="color: red">GOALS</span></h3>
@@ -64,10 +75,10 @@
     </div>
 </section>
 
-<section style="background-color: #EAE2E6;">
+<section id="sustainability-report" style="background-color: #EAE2E6;">
     <div class="report">
         <h4>SUSTAINBILITY <span style="color: red">REPORT</span></h4>
-        <p>The report provides information about all relevant business, environmental and social developments at the RapidPlast </p>
+        <p>The report provides information about all relevant business, environmental and social developments at the RapidPlast </p>
         <div class="card-set">
             <div class="container text-center">
                 <div class="row align-items-center">
@@ -175,7 +186,7 @@
     </div>
 </section>
 
-<section style="background-color: #EAE2E6">
+<section id="sustainability-award" style="background-color: #EAE2E6">
     <div class="sa">
         <div class="award">
             <h4>SUSTAINBILITY <span style="color: red">AWARD</span></h4>
@@ -184,7 +195,7 @@
     </div>
 </section>
 
-<section style="background-color: #EAE2E6">
+<section id="winner-project" style="background-color: #EAE2E6">
     <div class="wp">
         <div class="winner">
             <h4 class="m-0">WINNER <span style="color: red">PROJECT</span></h4>
@@ -202,7 +213,7 @@
                     <img class="cp" style="width: 80dvw; max-width: 500px; height: 100%" src="{{asset('/assets/images/about_us/visi.png')}}" alt="">
                   </div>
                   <div class="col des-1">
-                    {{-- <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b> --}}
+                    {{-- <b><h5><i>CONSUMER <span style="color: red;">PACKAGING</span></i></h5></b> --}}
                     <p>DESKRIPSI</p>
                   </div>
                 </div>
@@ -210,7 +221,7 @@
             <div class="container text-center p-5">
                 <div class="row align-items-center">
                   <div class="col des-2">
-                    {{-- <b><h5><i>INDUSTRIAL <span style="color: red;">PACKAGING</span></i></h5></b> --}}
+                    {{-- <b><h5><i>INDUSTRIAL <span style="color: red;">PACKAGING</span></i></h5></b> --}}
                     <p>DESKRIPSI</p>
                   </div>
                   <div class="col">
@@ -249,5 +260,51 @@
   
         window.addEventListener('scroll', checkPosition);
         checkPosition();
+
+        // Navbar scroll functionality untuk quality page
+        const mainNavbar = document.querySelector('.navbar'); 
+        const qualityNavbar = document.querySelector('.quality-nav');
+        
+        function adjustQualityNavbar() {
+            if (mainNavbar && qualityNavbar) {
+                const mainNavbarHeight = mainNavbar.offsetHeight;
+                qualityNavbar.style.top = mainNavbarHeight + 'px';
+            }
+        }
+        
+        adjustQualityNavbar();
+        window.addEventListener('resize', adjustQualityNavbar);
+        
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const mainNavbarHeight = mainNavbar ? mainNavbar.offsetHeight : 90;
+            
+            if (scrollTop > lastScrollTop) {
+                if (qualityNavbar) qualityNavbar.style.top = "-70px";
+            } else {
+                if (qualityNavbar) qualityNavbar.style.top = mainNavbarHeight + "px";
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // Smooth scroll untuk quality links
+        document.querySelectorAll('.quality-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const offset = mainNavbar ? mainNavbar.offsetHeight + 70 : 160;
+                    const targetPosition = targetElement.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     });
-  </script>
+</script>

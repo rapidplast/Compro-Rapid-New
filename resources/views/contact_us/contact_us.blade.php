@@ -26,7 +26,7 @@
       </div>
 
       <div class="col-lg-4 col-md-12 d-flex flex-column align-items-stretch overflow-auto" style="height: 100vh; overflow-y: auto;">
-        <div id="plant1" class="box-plant card active p-4" style="border-radius: 0; height: 200px;" onclick="changeMap(1)">
+        <div id="plant1" class="box-plant card " style="border-radius: 0; height: 200px;" onclick="changeMap(1)">
             <div class="card-body">
                 <h6 style="text-align: start">PT. RAPID PLAST 1 Jl. Berbek Industri V No.10, Bebek, Berbek, Kec. Waru, Kabupaten Sidoarjo, Jawa Timur.</h6>
                 <p class="phone-number" style="text-align: start; padding-top: 15px;"><i class="bi bi-telephone-fill" style="margin-right: 10px;"></i>(031)8436669</p>
@@ -127,7 +127,7 @@
       const mapUrls = {
           1: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0859780476258!2d112.75439447404227!3d-7.344241872244963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb255b4a33d9%3A0x7e9a4d14b6b79322!2sPT.%20Rapid%20Plast%20Indonesia%20Plant%201!5e0!3m2!1sid!2sid!4v1724058025981!5m2!1sid!2sid',
           2: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.082801903194!2d112.75893277404224!3d-7.344598672248897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb2a90c1d593%3A0xeca0a15f3daee527!2sPT.%20Rapid%20Plast%20Indonesia%20Plant%202!5e0!3m2!1sid!2sid!4v1724142934306!5m2!1sid!2sid',
-          3: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0859780476258!2d112.75439447404227!3d-7.344241872244963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb255b4a33d9%3A0x7e9a4d14b6b79322!2sPT.%20Rapid%20Plast%20Indonesia%20Plant%203!5e0!3m2!1sid!2sid!4v1724058025981!5m2!1sid!2sid',
+          3: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15863.151777336727!2d107.1140326!3d-6.2915778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699acc54dea033%3A0x56cbf5bf6bd4dd51!2sPT.%20Rapid%20Plast%20Indonesia%20Plant%203!5e0!3m2!1sid!2sid!4v1753864169162!5m2!1sid!2sid',
           4: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.923589939363!2d112.69707181220676!3d-7.711997740643295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d0d54ea5efe9%3A0x66aacb30b4abe2da!2sPT.%20RAPID%20PLAST%20INDONESIA%20-%20PLANT%204!5e0!3m2!1sid!2sid!4v1724143141484!5m2!1sid!2sid',
           5: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15861.293907974488!2d107.13001171060051!3d-6.352151446707041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b33dca82477%3A0x225f3d0429bfa5de!2sPT.%20Rapid%20Plast%20Indonesia%20Plant%205!5e0!3m2!1sid!2sid!4v1724143090551!5m2!1sid!2sid',
           6: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0859780476258!2d112.75439447404227!3d-7.344241872244963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb255b4a33d9%3A0x7e9a4d14b6b79322!2sPT.%20Rapid%20Plast%20Indonesia%20Plant%206!5e0!3m2!1sid!2sid!4v1724058025981!5m2!1sid!2sid'

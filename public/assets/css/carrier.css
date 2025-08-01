@@ -102,7 +102,7 @@ nav.navbar {
 
 .see-more-btn {
   display: inline-block;
-  background: linear-gradient(90deg, #cc0000, #e91e1e);
+  background: linear-gradient(135deg, #c41e3a 0%, #8B0000 100%);
   color: #fff !important;
   padding: 12px 28px;
   border-radius: 2px 20px 2px 20px;

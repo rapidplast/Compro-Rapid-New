@@ -216,8 +216,8 @@
     </div>
 </section>
 
-<!-- Product Showcase Section moved below Bottles -->
-<section id="product-showcase" style="background: #f5f5f5; padding: 80px 0;">
+<!-- Product Showcase Section below Bottles -->
+<section id="product-showcase" style="background: #f1f0f0ff; padding: 80px 0;">
     <div class="container text-center">
         <h4 style="color: #333; font-size: 28px; font-weight: bold; margin-bottom: 30px;">
             PRODUCT <span style="color: red;">SHOWCASE</span>
@@ -267,7 +267,7 @@
     </div>
 </section>
 
-<section id="clients-section" style="background-color: #ebebebff; padding: 80px 0;">
+<section id="clients-section" style="background-color: #f5f5f5; padding: 80px 0;">
     <div class="container">
         <div class="text-center mb-5">
             <h4 style="color: #333; font-size: 28px; font-weight: bold;">
@@ -282,13 +282,13 @@
                 <img src="{{asset('assets/images/clients/aqua.png')}}" alt="Coca Cola" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
-                <img src="{{asset('assets/images/clients/bdf.png')}}" alt="Aqua" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                <img src="{{asset('assets/images/clients/unilever.png')}}" alt="Aqua" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
-                <img src="{{asset('assets/images/clients/erela.png')}}" alt="Philips" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                <img src="{{asset('assets/images/clients/nestle.png')}}" alt="Philips" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
-                <img src="{{asset('assets/images/clients/gajah.png')}}" alt="Johnson & Johnson" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                <img src="{{asset('assets/images/clients/otsuka.png')}}" alt="Johnson & Johnson" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
                 <img src="{{asset('assets/images/clients/indolakto.png')}}" alt="Beiersdorf" style="max-width: 100%; max-height: 80px; object-fit: contain;">
@@ -302,10 +302,10 @@
                 <img src="{{asset('assets/images/clients/konicare.png')}}" alt="Tupperware" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
-                <img src="{{asset('assets/images/clients/nestle.png')}}" alt="Unilever" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                <img src="{{asset('assets/images/clients/erela.png')}}" alt="Unilever" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
-                <img src="{{asset('assets/images/clients/otsuka.png')}}" alt="FrieslandCampina" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                <img src="{{asset('assets/images/clients/gajah.png')}}" alt="FrieslandCampina" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
                 <img src="{{asset('assets/images/clients/paragon.png')}}" alt="P&G" style="max-width: 100%; max-height: 80px; object-fit: contain;">
@@ -330,7 +330,7 @@
             
             <!-- Row 4 -->
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
-                <img src="{{asset('assets/images/clients/unilever.png')}}" alt="Masan Group" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                <img src="{{asset('assets/images/clients/bdf.png')}}" alt="Masan Group" style="max-width: 100%; max-height: 80px; object-fit: contain;">
             </div>
             <div class="client-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; height: 120px;">
                 <img src="{{asset('assets/images/clients/viva.png')}}" alt="Paragon" style="max-width: 100%; max-height: 80px; object-fit: contain;">

@@ -41,7 +41,7 @@
     </div>
 </section>
 
-<section id="sustainability-goals" style="background-color: #EAE2E6;">
+<section id="sustainability-goals" style="background-color: #ffffffff;">
     <div class="first-text">
         <div class="sdg">
             <h3>Sustability Development <span style="color: red">GOALS</span></h3>
@@ -50,7 +50,7 @@
     </div>
 </section>
 
-<section style="background-color: #EAE2E6">
+<section style="background-color: #ffffffff">
     <div class="des-img">
         <div class="container-fluid text-start">
             <div class="row align-items-start">
@@ -186,7 +186,7 @@
     </div>
 </section>
 
-<section id="sustainability-award" style="background-color: #EAE2E6">
+<section id="sustainability-award" style="background-color: #ffffffff">
     <div class="sa">
         <div class="award">
             <h4>SUSTAINBILITY <span style="color: red">AWARD</span></h4>
